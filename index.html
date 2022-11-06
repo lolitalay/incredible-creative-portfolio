@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Лоліта, креативна копірайтерка</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section">
+          <div class="container greeting">
+            <img
+              src="/assets/Lolita-Photo.jpeg"
+              alt="Lolita Layzan"
+              class="greeting__photo"
+            />
+            <div class="greeting__text">
+              <div class="greeting__text_head">
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="greeting__line_top"
+                />
+                <p class="greeting__text_small">Вітаю ✊🏻</p>
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="greeting__line_bottom"
+                />
+              </div>
+              <p>
+                Я створюю <span>ідеї для будь-чого </span>від посту до кампанії
+                360˚
+              </p>
+              <p>
+                Базуюсь у Києві, лупаю скелю в Дії та Міністерстві цифрової
+                трансформації України
+              </p>
+              <p>⇩</p>
+            </div>
+          </div>
+        </section>
+        <div class="marquee">
+          <div class="marquee__text">
+            <p class="content">
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              &nbsp
+            </p>
+            <p class="content">
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ КЕЙСИ ПРОЄКТИ РОБОТИ
+              &nbsp
+            </p>
+
+            <!-- <p class="marquee__text">КЕЙСИ ПРОЄКТИ РОБОТИ &nbsp</p>
+          <p class="marquee__text">КЕЙСИ ПРОЄКТИ РОБОТИ &nbsp</p>
+          <p class="marquee__text">КЕЙСИ ПРОЄКТИ РОБОТИ &nbsp</p>
+          <p class="marquee__text">КЕЙСИ ПРОЄКТИ РОБОТИ &nbsp</p>
+          <p class="marquee__text">КЕЙСИ ПРОЄКТИ РОБОТИ &nbsp</p>
+          <p class="marquee__text">КЕЙСИ ПРОЄКТИ РОБОТИ &nbsp</p> -->
+          </div>
+        </div>
+        <section class="section">
+          <div class="container cases">
+            <a
+              class="cases__item"
+              href="/not-coffee-not-music-but-alternative.html"
+            >
+              <div class="cases_image">
+                <img src="./assets/noviy-case.jpeg" alt="noviy channel" />
+              </div>
+              <div class="cases_title">
+                Новий канал — Альтернативні трейлери
+              </div>
+            </a>
+            <a class="cases__item">
+              <div class="cases_image">
+                <img src="./assets/diya-case.jpeg" alt="diya" />
+              </div>
+              <div class="cases_title">Дія — Маніфест</div>
+            </a>
+            <a class="cases__item">
+              <div class="cases_image">
+                <img
+                  src="./assets/next-big-thing-case.jpg"
+                  alt="The next big thing"
+                />
+              </div>
+              <div class="cases_title">
+                The Next Big Thing. Generation — Знімальне промо
+              </div>
+            </a>
+            <a class="cases__item">
+              <div class="cases_image">
+                <img
+                  src="./assets/robota-case.jpg"
+                  alt="robota.ua"
+                  class="special"
+                />
+              </div>
+              <div class="cases_title">Rabota.ua — Слоган, радіоролики</div>
+            </a>
+            <a class="cases__item">
+              <div class="cases_image">
+                <img
+                  src="./assets/derzh-platezhi-case.jpg"
+                  alt="Diya - outdoor advertising"
+                />
+              </div>
+              <div class="cases_title">
+                Державні платежі в Дії — Зовнішня реклама
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="section section_dark">
+          <div class="container experience">
+            <p class="experience__title">Досвід</p>
+            <div class="experience__item">
+              <p class="experience__item_name">Fedoriv agency</p>
+              <p class="experience__item_value">
+                Стажерка, молодша копірайтерка
+              </p>
+            </div>
+            <div class="experience__item">
+              <p class="experience__item_name">1+1 media</p>
+              <p class="experience__item_value">Копірайтерка ефірного промо</p>
+            </div>
+            <div class="experience__item">
+              <p class="experience__item_name">Новий канал</p>
+              <p class="experience__item_value">Копірайтерка ефірного промо</p>
+            </div>
+            <div class="experience__item">
+              <p class="experience__item_name">Дія</p>
+              <p class="experience__item_value">Креативна копірайтерка</p>
+            </div>
+            <div class="experience__item">
+              <p class="experience__item_name">
+                Міністерство цифрової трансформації України
+              </p>
+              <p class="experience__item_value">Креативна копірайтерка</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
