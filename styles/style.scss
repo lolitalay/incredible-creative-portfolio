@@ -101,7 +101,7 @@ main {
   position: relative;
   width: 35px;
   height: 10px;
-  z-index: 3;
+  z-index: 20;
   &:hover {
     cursor: pointer;
   }
@@ -190,6 +190,9 @@ main {
   // .nav__list
 
   &__list {
+  }
+  &_dark {
+    background-color: $bgColor;
   }
 
   // .nav__item

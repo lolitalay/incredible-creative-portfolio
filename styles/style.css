@@ -155,7 +155,7 @@ main {
   position: relative;
   width: 35px;
   height: 10px;
-  z-index: 3;
+  z-index: 20;
 }
 .header__burger:hover {
   cursor: pointer;
@@ -234,6 +234,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.nav_dark {
+  background-color: #2a2829;
 }
 .nav__item {
   margin: 3vw 5vw;

@@ -14,7 +14,17 @@
     ></script>
     <script>
       $(function () {
-        $("#header").load("header.html");
+        $("#header").load("header.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
         $("#footer").load("footer.html");
       });
     </script>
