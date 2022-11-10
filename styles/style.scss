@@ -742,6 +742,7 @@ $md4: 480;
     grid-template-columns: 1fr 1fr;
   }
   &_three {
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -756,7 +757,7 @@ $md4: 480;
   }
 
   &_big-gap {
-    gap: 15vw;
+    gap: 10vw;
   }
 }
 
@@ -846,5 +847,24 @@ $md4: 480;
     height: 100%;
     object-position: 50% 50%;
     object-fit: cover;
+  }
+}
+
+.left-padding {
+  @media (min-width: $md3+px) {
+    align-self: baseline;
+  }
+}
+
+.derzh-platezhi_label {
+  &::before {
+    content: "головне повідомлення";
+    font-size: 25px;
+    color: $brightColor;
+    padding-bottom: 10px;
+    @media (min-width: $md3+px) {
+      margin-top: -50px;
+      position: absolute;
+    }
   }
 }
