@@ -659,10 +659,12 @@ main {
   flex-direction: column;
   gap: 30px;
   &__text-block {
-    margin-block: 40px 50px;
+    margin-block: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
     &_small {
       max-width: 350px;
       padding-right: 30px;
@@ -675,6 +677,18 @@ main {
         object-position: 50% 50%;
         object-fit: cover;
       }
+    }
+
+    @media (min-width: $md3+px) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: start;
+    }
+  }
+
+  @media (min-width: $md2+px) {
+    &__text-block {
+      margin-block: 40px 50px;
     }
   }
 }
@@ -781,31 +795,40 @@ main {
 }
 
 .grid {
-  display: grid;
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+  gap: 4vw;
 
-  &_two {
-    grid-template-columns: 1fr 1fr;
-  }
-  &_three {
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  @media (min-width: $md2+px) {
+    display: grid;
+    gap: 40px;
+    text-align: start;
+    &_two {
+      grid-template-columns: 1fr 1fr;
+    }
+    &_three {
+      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
-  &_four {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  &_60-40 {
-    grid-template-columns: 6fr 4fr;
-  }
-  &_40-60 {
-    grid-template-columns: 4fr 6fr;
-  }
-  &_big-gap {
-    gap: 10vw;
-  }
-  &_no-space {
-    gap: 0;
+    &_four {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &_60-40 {
+      grid-template-columns: 6fr 4fr;
+    }
+    &_40-60 {
+      grid-template-columns: 4fr 6fr;
+    }
+    &_big-gap {
+      gap: 10vw;
+    }
+    &_no-space {
+      gap: 0;
+    }
   }
 }
 
