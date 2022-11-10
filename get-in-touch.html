@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <title>Лоліта, на звʼязочку</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section">
+          <div class="container contacts">
+            <div class="grid grid_two grid_no-space">
+              <div class="grid-column_1 contacts_block">
+                <div class="text_body contacts_block_name-1">Дивитись</div>
+                <div class="text_body contacts_block_name-2">Писати</div>
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="contacts_block_line"
+                />
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="contacts_block_line"
+                />
+                <div class="text_body contacts_block_value-1">
+                  <a
+                    class="icon-link"
+                    href="https://www.instagram.com/lolita.laizan/"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <img
+                      src="./assets/instagram-outlined.svg"
+                      alt=""
+                      class="icon"
+                    />
+                  </a>
+                </div>
+                <div class="text_body contacts_block_value-2">
+                  lolayzan@gmail.com
+                </div>
+              </div>
+              <div class="grid-column_2 contacts_block">
+                <div class="text_body contacts_block_name-1">Дзвонити</div>
+                <div class="text_body contacts_block_name-2">Надсилати меми</div>
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="contacts_block_line"
+                />
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="contacts_block_line"
+                />
+                <div class="text_body contacts_block_value-1">
+                    +38 (063) 273-89-83
+                  </a>
+                </div>
+                <div class="text_body contacts_block_value-2">
+                    tlgrm: @lolita_lay
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
