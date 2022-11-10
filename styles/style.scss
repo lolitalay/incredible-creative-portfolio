@@ -957,6 +957,8 @@ main {
   }
 }
 
-#site-title {
-  white-space: nowrap;
+@media (min-width: $md2+px) {
+  #site-title {
+    white-space: nowrap;
+  }
 }
