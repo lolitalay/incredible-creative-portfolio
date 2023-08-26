@@ -1035,3 +1035,8 @@ main {
     flex-direction: column-reverse;
   }
 } /*# sourceMappingURL=style.css.map */
+
+.link {
+  padding-top: 4px;
+  text-decoration: underline;
+}
