@@ -1040,3 +1040,7 @@ main {
   padding-top: 4px;
   text-decoration: underline;
 }
+
+.no-hover:hover {
+  cursor: auto;
+} /*# sourceMappingURL=style.css.map */
