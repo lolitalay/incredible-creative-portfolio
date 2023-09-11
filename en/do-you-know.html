@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Креативне портфоліо креативної копірайтерки Лоліти Лайзан: кейси, контакти, сіві."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+    <title>Лоліта, на звʼязочку</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section">
+          <div class="container poetry">
+            <p class="text_subtitle1" style="text-align: center">
+              Ти знаєш, що ти — людина.<br />Ти знаєш про це чи ні?<br />Усмішка
+              твоя — єдина,<br />Мука твоя — єдина,<br />Очі твої — одні.<br /><br />Більше
+              тебе не буде.<br />Завтра на цій землі<br />Інші ходитимуть
+              люди,<br />Інші кохатимуть люди —<br />Добрі, ласкаві й злі.<br /><br />Сьогодні
+              усе для тебе —<br />Озера, гаї, степи.<br />І жити спішити
+              треба,<br />Кохати спішити треба —<br />Гляди ж не проспи!<br /><br />Бо
+              ти на землі — людина,<br />І хочеш того чи ні —<br />Усмішка твоя
+              — єдина,<br />Мука твоя — єдина,<br />Очі твої — одні.
+            </p>
+            <div class="text_h4" style="display: flex; justify-content: end">
+              Василь Симоненко
+            </div>
+            <div class="text_body" style="display: flex; justify-content: end">
+              Просто нагадала🫰🏻
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

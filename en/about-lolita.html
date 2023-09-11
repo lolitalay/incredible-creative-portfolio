@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Креативне портфоліо креативної копірайтерки Лоліти Лайзан: кейси, контакти, сіві."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Лоліта, ебаут</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section">
+          <div class="container about__greeting">
+            <div class="greeting__text">
+              <div class="greeting__text_head">
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="greeting__line_top"
+                />
+                <p class="greeting__text_small">Вітаю ✊🏻</p>
+                <hr
+                  color="black"
+                  width="100%"
+                  size="1px"
+                  style="height: 1px"
+                  class="greeting__line_bottom"
+                />
+              </div>
+              <div class="text_h3" style="font-weight: 500">
+                Я — Лоліта, креативна копірайтерка
+              </div>
+              <p class="text_subtitle1">
+                Дайте мені бриф і я перетворю його на ідею, сценарій, неймінг,
+                слоган, пост та навіть на вечірку. Особливо мене запалюють
+                проєкти, що роблять соціум кращим, людей відкритішими, а
+                комунікацію — легшою.
+              </p>
+              <p class="text_subtitle1">
+                Створювала у великій та маленьких агенціях, на ТБ-каналах, в
+                продукті та на фрілансі. Вмію працювати сама, в команді, вдома,
+                в офісі, в дорозі, в підвалі та на Балі.
+              </p>
+              <p class="text_subtitle1">
+                В проєктах не люблю довго розмовляти без діла, якнайшвидше
+                принесу перші ідеї, щоб було від чого відштовхнутись.
+              </p>
+              <p class="text_subtitle1">Тримаймось на звʼязочку 📞🐥</p>
+            </div>
+            <hr
+              color="black"
+              width="100%"
+              size="1px"
+              style="height: 1px; margin-top: 10vh"
+            />
+            <div class="experience">
+              <p class="experience__title">Освіта</p>
+              <div class="experience__item">
+                <p class="experience__item_name">ХНУ ім.В.Н.Каразіна</p>
+                <p class="experience__item_value">
+                  Філологічний факультет: українська мова та література
+                </p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">Bazilik school</p>
+                <p class="experience__item_value">Copywriting</p>
+                <p class="experience__item_value">Creative thinking</p>
+                <p class="experience__item_value">SMM</p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">Андрій Федорів</p>
+
+                <p class="experience__item_value">Стратегія = ідея</p>
+                <p class="experience__item_value">BRANDFATHER</p>
+                <p class="experience__item_value">Fedoriv method 3</p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">Таїс Золотковська</p>
+                <p class="experience__item_value">Писати, як дихати</p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">Projector</p>
+                <p class="experience__item_value">Як працює колір</p>
+                <p class="experience__item_value">Як працює композиція</p>
+                <p class="experience__item_value">
+                  Сучукрліт: тенденції, теми, імена
+                </p>
+              </div>
+            </div>
+            <hr
+              color="black"
+              width="100%"
+              size="1px"
+              style="height: 1px; margin-top: 10vh"
+            />
+            <div class="experience">
+              <p class="experience__title">Досвід</p>
+              <div class="experience__item">
+                <p class="experience__item_name">Fedoriv agency</p>
+                <p class="experience__item_value">
+                  Стажерка, молодша копірайтерка
+                </p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">1+1 media</p>
+                <p class="experience__item_value">
+                  Копірайтерка ефірного промо
+                </p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">Новий канал</p>
+                <p class="experience__item_value">
+                  Копірайтерка ефірного промо
+                </p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">Дія</p>
+                <p class="experience__item_value">Креативна копірайтерка</p>
+              </div>
+              <div class="experience__item">
+                <p class="experience__item_name">
+                  Міністерство цифрової трансформації України
+                </p>
+                <p class="experience__item_value">Креативна копірайтерка</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
