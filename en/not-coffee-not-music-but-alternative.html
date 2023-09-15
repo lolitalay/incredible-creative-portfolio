@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Креативне портфоліо креативної копірайтерки Лоліти Лайзан: кейси, контакти, сіві."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Лоліта, ебаут</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_avangers">
+          <div class="container case-cover">
+            <p class="case-cover__text_small">
+              Сценарії: ідеї, відбір матеріалу, робота в парі з режисером
+            </p>
+            <p class="case-cover__text_big">
+              Новий канал. Альтернативні трейлери до фільмів
+            </p>
+            <p class="case-cover__text_small case-cover__text_italic">
+              Я є Ґрут↓
+            </p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container case-view">
+            <div class="case-view__text-block">
+              <div class="text_h3">
+                На Новому <br />
+                регулярно крутять <br />
+                голлівудські фільми.
+              </div>
+              <div class="text_body case-view__text-block_small">
+                Кожного разу в парі з режисером монтажу до них потрібно було
+                створювати нові креативні ТБ-трейлери, щоб і з цікавим
+                концептом, і в тоні, і на часі, і під авдиторію.
+              </div>
+            </div>
+            <div class="video-block">
+              <div class="text_h4">Залізна людина, всі частини</div>
+              <iframe
+                class="video"
+                src="https://www.youtube-nocookie.com/embed/qNWeRTWuz8Q?"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-block">
+              <iframe
+                class="video"
+                src="https://www.youtube-nocookie.com/embed/Jm-_YsPQpus?"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="text_h4">До 8 березня кіно від чоловіків</div>
+            </div>
+            <div class="video-block">
+              <div class="text_h4">Чужі, Заповіт</div>
+              <iframe
+                class="video"
+                src="https://www.youtube-nocookie.com/embed/EvsFGEIlTjI?"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-block">
+              <iframe
+                class="video"
+                src="https://www.youtube-nocookie.com/embed/J5JJb_V1bzY?"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="text_h4">Зачарована</div>
+            </div>
+            <div class="video-block">
+              <div class="text_h4">Мураха і оса</div>
+              <iframe
+                class="video"
+                src="https://www.youtube-nocookie.com/embed/IMnDT-e3Jhg?"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container navigation">
+            <div></div>
+            <a
+              class="navigation__next"
+              href="i-havent-seen-such-an-amazing-video.html"
+            >
+              <p>Next The Next Big Thing. Generation — Знімальне промо</p></a
+            >
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
