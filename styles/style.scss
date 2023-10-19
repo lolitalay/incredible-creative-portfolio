@@ -292,6 +292,16 @@ main {
         ),
         url("../assets/bg-next-big-thing.png");
     }
+    &_saphira {
+      background-position: center;
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.15) 0%,
+          rgba(0, 0, 0, 0.15) 0.01%,
+          rgba(0, 0, 0, 0.25) 100%
+        ),
+        url("../assets/saphira-bg.jpg");
+    }
     &_robota-ua {
       height: 100vh;
       background-image: linear-gradient(
@@ -861,6 +871,10 @@ main {
     &_40-60 {
       grid-template-columns: 4fr 6fr;
     }
+    &_20-80 {
+      grid-template-columns: 2fr 8fr;
+    }
+
     &_big-gap {
       gap: 10vw;
     }
@@ -946,6 +960,20 @@ main {
     content: "]";
     font-size: calc(3.6vw + 1rem);
     color: $brightColor;
+  }
+  &_pink {
+    display: inline-flex;
+    align-items: center;
+    &::before {
+      content: "[";
+      font-size: calc(3.6vw + 1rem);
+      color: #e93dc4;
+    }
+    &::after {
+      content: "]";
+      font-size: calc(3.6vw + 1rem);
+      color: #e93dc4;
+    }
   }
 }
 
@@ -1036,4 +1064,8 @@ main {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+.pink {
+  color: #e93dc4;
 }

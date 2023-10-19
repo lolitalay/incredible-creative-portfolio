@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative portfolio of content designer and copywriter Loita Laizan: cases, contacts, CV"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Лоліта, ебаут</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_saphira">
+          <div class="container case-cover">
+            <p class="case-cover__text_small">
+              Content style guide, brad's tone and voice
+            </p>
+            <p class="text_h1">Saphira Agency</p>
+            <p class="case-cover__text_small case-cover__text_italic">↓↓↓</p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container case-view">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                border-radius: 37px;
+                border: 1px #e93dc4 solid;
+                padding: 16px;
+              "
+            >
+              <div class="case-view__text-block grid grid_two">
+                <div class="grid-column_1">
+                  <div class="text_subtitle1" style="padding-bottom: 10px">
+                    Saphira Agency was a young marketing creative agency with 50
+                    employees in main office in Kyiv, Ukraine. Worked for
+                    American, Latin American, Ukrainian, and Israeli markets.
+                  </div>
+                  <div class="text_subtitle1">
+                    At the beginning of their journey, the agency reached out to
+                    me for creating guidlines and a brad tone-of-voice.
+                  </div>
+                </div>
+                <div class="flex flex_center-block case-view__text-block_image">
+                  <img class="" src="../assets/saphira-logo.jpg" />
+                </div>
+              </div>
+              <div class="flex flex_center-block">
+                <div class="text_subtitle1 padding-block_desktop">
+                  The agency's founder had a clear vision for positioning of the
+                  agency: putting the client at the center of all processes. He
+                  had several other businesses and had worked with creative
+                  agencies from the client's side. As a client himself, he
+                  didn't like that agencies typically focus on internal
+                  decision-making, don't always listen to the client's
+                  preferences, communicate poorly about project status, and may
+                  completely chage the team during long-term collaboration.
+                </div>
+              </div>
+              <div class="flex flex_center-block">
+                <div class="text_subtitle1 padding-block_desktop">
+                  That's why the agency's approach was clear to him:<br />
+                  <strong> client is at the center of all processes.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text grid-column_1 pink">001</div>
+                </div>
+              </div>
+              <em class="text_h4 grid-column_2">
+                Initially, in line with the brand brief and strategy, I outlined
+                the brand persona, providing a brief description of the
+                character and their behavior.</em
+              >
+              <div
+                class="case-view__text-block_image flex flex_center-block grid-column_2"
+              >
+                <img
+                  class=""
+                  src="../assets/saphira-logo.jpg"
+                  style="height: 250px"
+                />
+              </div>
+            </div>
+
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text grid-column_1 pink">002</div>
+                </div>
+              </div>
+              <em class="text_h4 grid-column_2">
+                Based on this, I identified 5 key tone of voice traits and
+                detailed each one.</em
+              >
+              <div
+                class="case-view__text-block_image flex flex_center-block grid-column_2"
+              >
+                <img
+                  class=""
+                  src="../assets/saphira-logo.jpg"
+                  style="height: 250px"
+                />
+              </div>
+            </div>
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text grid-column_1 pink">003</div>
+                </div>
+              </div>
+              <em class="text_h4 grid-column_2">
+                Afterward, I outlined clear points on how the brand communicates
+                and how it doesn't, ensuring that copywriters creating further
+                communication maintain a consistent writing style.</em
+              >
+              <div
+                class="case-view__text-block_image flex flex_center-block grid-column_2"
+              >
+                <img
+                  class=""
+                  src="../assets/saphira-logo.jpg"
+                  style="height: 250px"
+                />
+              </div>
+            </div>
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text grid-column_1 pink">004</div>
+                </div>
+              </div>
+              <em class="text_h4 grid-column_2">
+                I specified what to avoid in the texts to maintain the quality
+                of communication.
+              </em>
+              <div
+                class="case-view__text-block_image flex flex_center-block grid-column_2"
+              >
+                <img
+                  class=""
+                  src="../assets/saphira-logo.jpg"
+                  style="height: 250px"
+                />
+              </div>
+            </div>
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text grid-column_1 pink">005</div>
+                </div>
+              </div>
+              <em class="text_h4 grid-column_2">
+                I defined the language style for various platforms.
+              </em>
+              <div
+                class="case-view__text-block_image flex flex_center-block grid-column_2"
+              >
+                <img
+                  class=""
+                  src="../assets/saphira-logo.jpg"
+                  style="height: 250px"
+                />
+              </div>
+            </div>
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text grid-column_1 pink">006</div>
+                </div>
+              </div>
+              <em class="text_h4 grid-column_2">
+                I also established general guidelines for various key
+                communication channels.
+              </em>
+              <div
+                class="case-view__text-block_image flex flex_center-block grid-column_2"
+              >
+                <img
+                  class=""
+                  src="../assets/saphira-logo.jpg"
+                  style="height: 250px"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div
+            class="container navigation"
+            style="display: flex; justify-content: end"
+          >
+            <a
+              class="navigation__next"
+              href="end-to-end-for-government-brand.html"
+              style="max-width: 50%"
+            >
+              <p>
+                eSupport — UI and copy for the site, app flow, script for
+                explainer
+              </p>
+            </a>
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
