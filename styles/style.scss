@@ -92,7 +92,7 @@ main {
   }
 
   @media (min-width: $md3+px) {
-    padding: 20px 5vw;
+    padding: 0px 5vw;
   }
 }
 
@@ -176,7 +176,7 @@ main {
   overflow: auto;
   background-color: $lightColor;
   transition: all 0.3s ease 0s;
-  padding: 20px 25px;
+  padding: 32px 25px;
   z-index: 10;
 
   &__wrapper {
@@ -210,6 +210,7 @@ main {
   &__action {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   @media (min-width: $md3+px) {
@@ -247,8 +248,9 @@ main {
 }
 .icon-link {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
 }
 .section {
   padding-block: 20px;
@@ -291,6 +293,16 @@ main {
           rgba(0, 0, 0, 0.25) 100%
         ),
         url("../assets/bg-next-big-thing.png");
+    }
+    &_saphira {
+      background-position: center;
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.15) 0%,
+          rgba(0, 0, 0, 0.15) 0.01%,
+          rgba(0, 0, 0, 0.25) 100%
+        ),
+        url("../assets/saphira-bg.jpg");
     }
     &_robota-ua {
       height: 100vh;
@@ -861,6 +873,10 @@ main {
     &_40-60 {
       grid-template-columns: 4fr 6fr;
     }
+    &_20-80 {
+      grid-template-columns: 2fr 8fr;
+    }
+
     &_big-gap {
       gap: 10vw;
     }
@@ -946,6 +962,20 @@ main {
     content: "]";
     font-size: calc(3.6vw + 1rem);
     color: $brightColor;
+  }
+  &_pink {
+    display: inline-flex;
+    align-items: center;
+    &::before {
+      content: "[";
+      font-size: calc(3.6vw + 1rem);
+      color: #e93dc4;
+    }
+    &::after {
+      content: "]";
+      font-size: calc(3.6vw + 1rem);
+      color: #e93dc4;
+    }
   }
 }
 
@@ -1036,4 +1066,120 @@ main {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+.pink {
+  color: #e93dc4;
+}
+
+.header {
+  &__lang-btn {
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 120%;
+    color: $lightColor;
+    border: 1.7px solid #000;
+    border-radius: 3px;
+    background-color: $bgColor;
+    text-align: center;
+    cursor: pointer;
+    z-index: 20;
+
+    &:hover {
+      background-color: $lightColor;
+      color: $bgColor;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+
+    @media (min-width: 768px) {
+      width: 31px;
+      height: 31px;
+      font-size: 16px;
+      border-radius: 7px;
+    }
+
+    // @media (min-width: 992px) {
+    //   width: 31px;
+    //   height: 31px;
+    //   font-size: 12px;
+    //   border-radius: 5px;
+    // }
+  }
+  &__lang-opt {
+    z-index: 10;
+    width: 28px;
+    height: 28px;
+    background-color: $lightColor;
+    color: $bgColor;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 120%;
+    text-decoration: none;
+    text-align: center;
+    border: 1.7px solid $bgColor;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    // transition: $transition;
+    // transition-timing-function: $cubic-bezier;
+
+    &:hover {
+      background-color: $bgColor;
+      color: $lightColor;
+    }
+
+    &:nth-child(1) {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    &:nth-child(3) {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    @media (min-width: 768px) {
+      width: 31px;
+      height: 31px;
+      font-size: 16px;
+      &:nth-child(1) {
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+      }
+      &:nth-child(2) {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+      }
+    }
+
+    // @media (min-width: 992px) {
+    //   width: 41px;
+    //   height: 41px;
+    //   font-size: 16px;
+    // }
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.show {
+  display: block;
+}
+
+.header-hide {
+  top: -100px;
 }
