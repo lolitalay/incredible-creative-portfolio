@@ -142,7 +142,12 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.61) 0.01%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.68) 0%,
+    rgba(0, 0, 0, 0.61) 0.01%,
+    rgba(0, 0, 0, 0) 100%
+  );
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -313,7 +318,13 @@ main {
 }
 .section__cover_avangers {
   background-position: top;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.61) 0.01%, rgba(0, 0, 0, 0.6) 100%), url("../assets/bg-newchannel.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.68) 0%,
+      rgba(0, 0, 0, 0.61) 0.01%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../assets/bg-newchannel.jpg");
 }
 .section__cover_manifest {
   background-position: center;
@@ -321,11 +332,23 @@ main {
 }
 .section__cover_next-big-thing {
   background-position: center;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 0.01%, rgba(0, 0, 0, 0.25) 100%), url("../assets/bg-next-big-thing.png");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 0.01%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("../assets/bg-next-big-thing.png");
 }
 .section__cover_saphira {
   background-position: center;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 0.01%, rgba(0, 0, 0, 0.25) 100%), url("../assets/saphira-bg.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 0.01%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("../assets/saphira-bg.jpg");
 }
 .section__cover_esupport {
   position: absolute;
@@ -339,7 +362,13 @@ main {
 }
 .section__cover_robota-ua {
   height: 100vh;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 0.01%, rgba(0, 0, 0, 0.25) 100%), url("../assets/bg-robota-ua.png");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 0.01%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("../assets/bg-robota-ua.png");
 }
 @media (min-width: 1020px) {
   .section {
@@ -377,15 +406,15 @@ main {
 }
 .greeting__photo {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 345px;
   max-width: 345px;
   width: 100%;
   -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
 }
 .greeting__text {
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -413,7 +442,7 @@ main {
     max-width: none;
   }
   .greeting__text {
-    font-size: 40px;
+    font-size: 32px;
   }
   .greeting__text_small {
     font-size: 26px;
@@ -478,14 +507,14 @@ main {
   width: 100%;
   height: 100%;
   -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: opacity ease 200ms;
 }
 .cases_image img.special {
   -o-object-position: 0% 51.7881%;
-     object-position: 0% 51.7881%;
+  object-position: 0% 51.7881%;
 }
 .cases_title {
   position: absolute;
@@ -536,7 +565,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   font-weight: 200;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
 }
 .experience__item_name {
   font-size: 28px;
@@ -561,7 +590,7 @@ main {
   }
   .experience__item {
     -moz-column-gap: 25px;
-         column-gap: 25px;
+    column-gap: 25px;
   }
   .experience__item_name {
     font-size: 35px;
@@ -677,9 +706,9 @@ main {
   width: 100%;
   height: 100%;
   -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .case-view__text-block {
@@ -964,9 +993,9 @@ main {
   width: 100%;
   height: 100%;
   -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  object-position: 50% 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1052,8 +1081,8 @@ main {
   width: 28px;
   height: 28px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-weight: 700;
   font-size: 10px;
   line-height: 120%;
@@ -1170,8 +1199,8 @@ main {
   width: 28px;
   height: 28px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-weight: 700;
   font-size: 10px;
   line-height: 120%;
@@ -1223,4 +1252,8 @@ main {
 
 .blue {
   color: #0974e8;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.no-hover:hover {
+  cursor: default;
+} /*# sourceMappingURL=style.css.map */
