@@ -51,6 +51,7 @@ main {
 .header {
   // .header__display
   padding: 20px;
+  z-index: 3;
 
   &__display {
     display: flex;
@@ -254,6 +255,7 @@ main {
 }
 .section {
   padding-block: 20px;
+  margin: 0;
   display: flex;
   justify-content: center;
 
@@ -303,6 +305,16 @@ main {
           rgba(0, 0, 0, 0.25) 100%
         ),
         url("../assets/saphira-bg.jpg");
+    }
+    &_esupport {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      background-image: url("../assets/esupport-bg.jpg");
     }
     &_robota-ua {
       height: 100vh;
@@ -876,7 +888,18 @@ main {
     &_20-80 {
       grid-template-columns: 2fr 8fr;
     }
+    &_10-90 {
+      grid-template-columns: 1fr 9fr;
+    }
 
+    &_10-120 {
+      grid-template-columns: 1fr 12fr;
+    }
+    &_five {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      align-items: flex-start;
+    }
     &_big-gap {
       gap: 10vw;
     }
@@ -1173,7 +1196,7 @@ main {
     line-height: 120%;
     text-decoration: none;
     text-align: center;
-    border: 1.7px solid $bgColor;
+    border: 1.7px solid #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1222,7 +1245,7 @@ main {
     font-size: 10px;
     line-height: 120%;
     color: $bgColor;
-    border: 1.7px solid;
+    border: 1.7px solid #fff;
     border-radius: 3px;
     background-color: #fff;
     text-align: center;
@@ -1271,4 +1294,8 @@ main {
 
 .header-hide {
   top: -100px;
+}
+
+.blue {
+  color: #0974e8;
 }
