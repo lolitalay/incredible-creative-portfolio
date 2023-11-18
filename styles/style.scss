@@ -533,9 +533,9 @@ main {
 
   &__item {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 50px 1fr;
     font-weight: 200;
-    column-gap: 15px;
+    column-gap: 5px;
     // align-items: center;
     // .experience__item_name
     &_name {
@@ -546,13 +546,23 @@ main {
       justify-self: flex-end;
     }
 
+    &_year {
+      font-size: 15px;
+      text-align: center;
+      line-height: 36px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      justify-self: flex-end;
+      opacity: 0.5;
+    }
+
     // .experience__item_value
 
     &_value {
       font-size: 20px;
       line-height: 150%;
-      grid-column-start: 2;
-      grid-column-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
     }
   }
 
@@ -564,8 +574,13 @@ main {
     }
 
     &__item {
-      column-gap: 25px;
+      grid-template-columns: 1fr 70px 1fr;
+      column-gap: 15px;
 
+      &_year {
+        font-size: 20px;
+        line-height: 36px;
+      }
       &_name {
         font-size: 35px;
         max-width: 350px;
