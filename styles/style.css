@@ -416,7 +416,7 @@ main {
     font-size: 32px;
   }
   .greeting__text_small {
-    font-size: 26px;
+    font-size: 20px;
     white-space: nowrap;
   }
   .greeting__text_head {
