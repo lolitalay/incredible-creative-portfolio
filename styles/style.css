@@ -598,9 +598,9 @@ main {
   margin-top: auto;
 }
 .footer__text {
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 130%;
 }
 .footer__button {
@@ -641,7 +641,7 @@ main {
     padding: 2vw 3vw;
   }
   .footer__text {
-    font-size: 26px;
+    font-size: 20px;
     max-width: 500px;
   }
 }
