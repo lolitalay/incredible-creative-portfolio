@@ -553,6 +553,7 @@ main {
   grid-column-end: 3;
   justify-self: flex-end;
   opacity: 0.5;
+  margin-inline: auto;
 }
 .experience__item_value {
   font-size: 20px;
@@ -637,7 +638,7 @@ main {
   .footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 5vw 5vw;
+    padding: 2vw 3vw;
   }
   .footer__text {
     font-size: 26px;
@@ -755,6 +756,11 @@ main {
   font-weight: 400;
   font-size: calc(0.72vw + 1rem);
   line-height: 1.3664;
+}
+
+.about-text {
+  font-size: calc(0.48vw + 1rem);
+  max-width: 60ch;
 }
 
 .video-block {
@@ -1241,4 +1247,16 @@ main {
 
 .no-hover:hover {
   cursor: default;
+}
+
+@media (max-width: 1020px) {
+  .media-photo-1020 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1020px) {
+  .margin-top-desktop {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

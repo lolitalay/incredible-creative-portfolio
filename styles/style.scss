@@ -402,7 +402,7 @@ main {
     &__text {
       font-size: 32px;
       &_small {
-        font-size: 26px;
+        font-size: 20px;
         white-space: nowrap;
       }
       &_head {
@@ -554,6 +554,7 @@ main {
       grid-column-end: 3;
       justify-self: flex-end;
       opacity: 0.5;
+      margin-inline: auto;
     }
 
     // .experience__item_value
@@ -650,7 +651,7 @@ main {
   @media (min-width: $md3+px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 5vw 5vw;
+    padding: 2vw 3vw;
     &__text {
       font-size: 26px;
       max-width: 500px;
@@ -796,6 +797,12 @@ main {
     line-height: calc(1.4 * (1 + (1 - 1.6) / 25));
   }
 }
+
+.about-text {
+  font-size: calc((1.4 - 1) * 1.2vw + 1rem);
+  max-width: 60ch;
+}
+
 .video-block {
   display: flex;
   gap: 15px;
@@ -1318,5 +1325,17 @@ main {
 .no-hover {
   &:hover {
     cursor: default;
+  }
+}
+
+.media-photo-1020 {
+  @media (max-width: $md2+px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.margin-top-desktop {
+  @media (min-width: $md2+px) {
+    margin-top: 20px;
   }
 }
