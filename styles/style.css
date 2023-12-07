@@ -534,12 +534,12 @@ main {
 .experience {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .experience__title {
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 300;
 }
 .experience__item {
@@ -550,11 +550,12 @@ main {
        column-gap: 5px;
 }
 .experience__item_name {
-  font-size: 28px;
+  font-size: 22px;
   text-align: end;
   grid-column-start: 1;
   grid-column-end: 2;
   justify-self: flex-end;
+  font-weight: 400;
 }
 .experience__item_year {
   font-size: 15px;
@@ -567,18 +568,18 @@ main {
   margin-inline: auto;
 }
 .experience__item_value {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 150%;
   grid-column-start: 3;
   grid-column-end: 4;
 }
 @media (min-width: 1020px) {
   .experience {
-    margin-block: 40px;
-    gap: 40px;
+    margin-block: 25px;
+    gap: 20px;
   }
   .experience__title {
-    font-size: 60px;
+    font-size: 44px;
   }
   .experience__item {
     grid-template-columns: 1fr 70px 1fr;
@@ -587,14 +588,15 @@ main {
   }
   .experience__item_year {
     font-size: 20px;
-    line-height: 36px;
+    line-height: 25px;
   }
   .experience__item_name {
-    font-size: 35px;
+    font-size: 26px;
     max-width: 350px;
+    font-weight: 400;
   }
   .experience__item_value {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

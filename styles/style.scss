@@ -532,11 +532,11 @@ main {
   // .experience__title
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   &__title {
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 300;
   }
 
@@ -550,11 +550,12 @@ main {
     // align-items: center;
     // .experience__item_name
     &_name {
-      font-size: 28px;
+      font-size: 22px;
       text-align: end;
       grid-column-start: 1;
       grid-column-end: 2;
       justify-self: flex-end;
+      font-weight: 400;
     }
 
     &_year {
@@ -571,7 +572,7 @@ main {
     // .experience__item_value
 
     &_value {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 150%;
       grid-column-start: 3;
       grid-column-end: 4;
@@ -579,10 +580,10 @@ main {
   }
 
   @media (min-width: $md2+px) {
-    margin-block: 40px;
-    gap: 40px;
+    margin-block: 25px;
+    gap: 20px;
     &__title {
-      font-size: 60px;
+      font-size: 44px;
     }
 
     &__item {
@@ -591,17 +592,18 @@ main {
 
       &_year {
         font-size: 20px;
-        line-height: 36px;
+        line-height: 25px;
       }
       &_name {
-        font-size: 35px;
+        font-size: 26px;
         max-width: 350px;
+        font-weight: 400;
       }
 
       // .experience__item_value
 
       &_value {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
