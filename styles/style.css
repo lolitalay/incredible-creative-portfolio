@@ -288,9 +288,13 @@ main {
 
 .icon-link {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   margin-left: 5px;
+}
+.icon-link:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .section {
@@ -385,7 +389,7 @@ main {
      object-position: 50% 50%;
 }
 .greeting__text {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -413,7 +417,9 @@ main {
     max-width: none;
   }
   .greeting__text {
-    font-size: 32px;
+    font-size: 26px;
+    height: 100%;
+    justify-content: space-between;
   }
   .greeting__text_small {
     font-size: 20px;
@@ -429,6 +435,11 @@ main {
   }
   .greeting__line_bottom {
     display: inline-block;
+  }
+}
+@media (min-width: 1220px) {
+  .greeting__text {
+    font-size: 27px;
   }
 }
 
@@ -600,7 +611,6 @@ main {
 .footer__text {
   font-size: 15px;
   text-align: left;
-  margin-bottom: 20px;
   line-height: 130%;
 }
 .footer__button {
