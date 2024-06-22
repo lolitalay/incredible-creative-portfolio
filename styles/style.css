@@ -37,7 +37,7 @@ html {
 html,
 body {
   height: 100%;
-  background-color: #e0e0da;
+  background-color: #FFFFFF;
   margin: 0;
   color: #000;
 }
@@ -184,10 +184,10 @@ main {
   bottom: 0;
 }
 .header__burger_light:before {
-  background-color: #e0e0da;
+  background-color: #FFFFFF;
 }
 .header__burger_light:after {
-  background-color: #e0e0da;
+  background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .header__burger {
@@ -224,7 +224,7 @@ main {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #e0e0da;
+  background-color: #FFFFFF;
   transition: all 0.3s ease 0s;
   padding: 32px 25px;
   z-index: 10;
