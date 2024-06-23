@@ -44,7 +44,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Noto", sans-serif;
   font-size: 12px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -55,7 +55,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Noto", sans-serif;
 }
 
 input::-ms-clear {
