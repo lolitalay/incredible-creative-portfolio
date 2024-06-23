@@ -44,7 +44,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Roboto+Flex";
+  font-family: "Bellota+Text";
   font-size: 12px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -55,7 +55,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Roboto+Flex";
+  font-family: "Bellota+Text";
 }
 
 input::-ms-clear {
