@@ -1271,6 +1271,9 @@ main {
   .margin-top-desktop {
     margin-top: 20px;
   }
+  
+}/*# sourceMappingURL=style.css.map */
+
 
   .text_large {
   font-size: 1em;
@@ -1300,6 +1303,3 @@ main {
   background: url('../assets/mintsifra_background.jpeg') no-repeat center center/cover;
   background-size: cover;
 }
-
-  
-}/*# sourceMappingURL=style.css.map */
