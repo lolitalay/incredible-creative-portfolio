@@ -1271,4 +1271,35 @@ main {
   .margin-top-desktop {
     margin-top: 20px;
   }
+
+  .text_large {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+}
+
+.video-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.video {
+  max-width: 100%;
+}
+
+.video-caption {
+  font-size: 0.5em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.section__cover_avangers {
+  background: url('../assets/mintsifra_background.jpeg') no-repeat center center/cover;
+  background-size: cover;
+}
+
+  
 }/*# sourceMappingURL=style.css.map */
