@@ -36,6 +36,35 @@
         $("#footer").load("footer.html");
       });
     </script>
+    <style>
+      .video-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .video {
+        max-width: 100%;
+      }
+
+      .case-view__text-block .text_h5, 
+      .case-view__text-block .text_body {
+        font-size: 1em;
+      }
+
+      .video-caption {
+        font-size: 0.5em;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .section__cover_avangers {
+        background: url('../assets/mintsifra_background.jpeg') no-repeat center center/cover;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -76,11 +105,11 @@
             </div>
             <div class="case-view__text-block flex flex_center-block">
               <div style="max-width: 700px;">
-               <p class="text_large">
+               <p class="text_h5">
                   My task was to collaborate with the video editor to create detailed and clear 
                   video presentations of three projects for the international delegations.
                 </p>
-                <p class="text_large">
+                <p class="text_h5">
                   To do this, I gathered information on each project, highlighted the key points, 
                   wrote the copy for the voiceovers and captions, and provided the video editor 
                   with storyboards and shot breakdowns.
