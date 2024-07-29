@@ -283,22 +283,44 @@
               size="1px"
               style="height: 1px; margin-top: 10vh"
             />
-     <div class="experience">
-              <p class="experience__title">Interests</p>
-              <div class="greeting__text">
-              <p class="text_subtitle1 about-text">
-                🌎exploring the world 👩🏻‍🎤culture 👩🏻‍🎨contemporary art 🎨painting 🖼museums
-              </p>
-              <p class="text_subtitle1 about-text">
-                📸filmphoto 35mm 🎬movies of 90's 🍜asian food ☕️coffee 🎧electronic music
-              </p>
-              <p class="text_subtitle1 about-text">
-                👗offline events 🕺festivals 🎸concerts 🚲bicycle 🏃🏻‍♀️jogging 🚶🏻‍♀️long walks 
-              </p>
-              <p class="text_subtitle1 about-text">
-                💭psychology ✔️self-improvement ✊🏻feminism 👩‍❤️‍👩LGBTQ+ support
- </p>
-          </div>
+  <div class="experience">
+    <p class="experience__title" onclick="toggleSection('interests-content')">Interests</p>
+    <div id="interests-content" class="interests-columns">
+      <div class="column">
+        <p>🌎exploring the world</p>
+        <p>👩🏻‍🎤culture</p>
+        <p>👩🏻‍🎨contemporary art</p>
+        <p>🎨painting</p>
+        <p>🖼museums</p>
+      </div>
+      <div class="column">
+        <p>📸filmphoto 35mm</p>
+        <p>🎬movies of 90's</p>
+        <p>🍜asian food</p>
+        <p>☕️coffee</p>
+        <p>🎧electronic music</p>
+      </div>
+      <div class="column">
+        <p>👗offline events</p>
+        <p>🕺festivals</p>
+        <p>🎸concerts</p>
+        <p>🚲bicycle</p>
+        <p>🏃🏻‍♀️jogging</p>
+        <p>🚶🏻‍♀️long walks</p>
+        <p>💭psychology</p>
+        <p>✔️self-improvement</p>
+        <p>✊🏻feminism</p>
+        <p>👩‍❤️‍👩LGBTQ+ support</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.classList.toggle('active');
+    }
+  </script>
         </section>
       </main>
       <div id="footer"></div>
