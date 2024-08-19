@@ -18,55 +18,53 @@
     <style>
       .section__cover_google {
         background: url('../assets/google-background.jpg') no-repeat center center/cover;
-        height: 500px; /* Висота секції з фоном */
-        color: white; /* Колір тексту на фоні */
+        height: 500px;
+        color: white;
         display: flex;
-        align-items: flex-end; /* Вирівнюємо елементи по нижньому краю */
-        justify-content: flex-end; /* Вирівнюємо елементи справа */
-        padding: 20px; /* Внутрішній відступ */
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
       }
 
       .case-cover__text_block {
         max-width: 500px;
         text-align: right;
-        background: rgba(0, 0, 0, 0.5); /* Напівпрозоре тло */
+        background: rgba(0, 0, 0, 0.5);
         padding: 20px;
         border-radius: 8px;
       }
 
       .case-cover__text_small {
         font-size: 1em;
-        color: #ffffff; /* Білий колір тексту */
+        color: #ffffff;
       }
 
       .text_h1 {
         font-size: 2.5em;
         margin-top: 0;
         margin-bottom: 10px;
-        color: #ffffff; /* Білий колір тексту */
+        color: #ffffff;
       }
 
-      /* Оформлення для вступного тексту */
       .intro-text {
         background-color: #f8f9fa;
         padding: 20px;
-        border-left: 5px solid #4285F4; /* Синій колір Google */
+        border-left: 5px solid #4285F4;
         border-radius: 5px;
         margin-bottom: 20px;
       }
 
       .intro-text h2 {
-        color: #EA4335; /* Червоний колір Google */
+        color: #EA4335;
         font-size: 2em;
         margin-bottom: 10px;
       }
 
       .intro-text p {
-        color: #34A853; /* Зелений колір Google */
+        color: #34A853;
         font-size: 1.2em;
       }
 
-      /* Оформлення для слайдів */
       .case-view__text-block_image img {
         border-radius: 10px;
         transition: transform 0.3s ease, opacity 0.3s ease;
@@ -77,7 +75,6 @@
         opacity: 0.9;
       }
 
-      /* Оформлення ліній між блоками */
       .divider-line {
         height: 4px;
         background: linear-gradient(90deg, #EA4335, #FBBC05, #34A853, #4285F4);
@@ -85,7 +82,6 @@
         border-radius: 2px;
       }
 
-      /* Зірочки в кружечках замість скобок */
       .brackets-block {
         background-color: transparent; 
         border-radius: 50%;
@@ -100,7 +96,7 @@
       .brackets-text {
         font-size: 18px;
         font-weight: bold;
-        color: #FBBC05; /* Жовтий колір Google */
+        color: #FBBC05;
       }
     </style>
     <script
@@ -149,73 +145,13 @@
               </p>
             </div>
 
-      /* Оформлення для слайдів */
-      .case-view__text-block_image img {
-        border-radius: 10px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-      }
-
-      .case-view__text-block_image img:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
-      }
-
-      /* Оформлення ліній між блоками */
-      .divider-line {
-        height: 4px;
-        background: linear-gradient(90deg, #EA4335, #FBBC05, #34A853, #4285F4);
-        margin: 40px 0;
-        border-radius: 2px;
-      }
-    </style>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(function () {
-        $("#header").load("header-dark.html", function () {
-          let burg = document.querySelectorAll(".header__burger, .nav");
-          for (let i = 0; i < burg.length; i++) {
-            burg[i].addEventListener("click", (event) => {
-              let nav = document.querySelectorAll(".header__burger,.nav");
-              for (let j = 0; nav.length; j++) {
-                nav[j].classList.toggle("active");
-              }
-            });
-          }
-        });
-        $("#footer").load("footer.html");
-      });
-    </script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div id="header"></div>
-      <main>
-        <section class="section section__cover section__cover_google">
-                   <div class="container case-cover">
-            <p class="case-cover__text_small">
-               App idea, UX research, personas, problem statements, user journey maps
-            </p>
-            <p class="text_h1">Google Case Study</p>
-            <p class="case-cover__text_small case-cover__text_italic">↓</p>
-          </div>
-        </section>
-        <section class="section">
-          <div class="container case-view">
-            <div class="intro-text">
-              <h2>Introduction</h2>
-              <p>
-                In this case study, we explore the conceptualization, research, and design process 
-                for a new Google app aimed at enhancing user experience. This project involved 
-                creating user personas, mapping user journeys, and addressing key problem statements.
-              </p>
-            </div>
-
             <!-- Слайди з зображеннями -->
             <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block">
+                  <div class="brackets-text">&#9733;</div>
+                </div>
+              </div>
               <em class="text_subtitle1 grid-column_2">
                 Understanding the target audience and their needs.
               </em>
@@ -224,10 +160,14 @@
               </div>
             </div>
 
-            <!-- Лінія між слайдами -->
             <div class="divider-line"></div>
 
             <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block">
+                  <div class="brackets-text">&#9733;</div>
+                </div>
+              </div>
               <em class="text_subtitle1 grid-column_2">
                 Mapping the user journey from start to finish.
               </em>
@@ -236,11 +176,14 @@
               </div>
             </div>
 
-            <!-- Лінія між слайдами -->
             <div class="divider-line"></div>
 
-            <!-- Повторюємо аналогічні блоки для інших слайдів -->
             <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block">
+                  <div class="brackets-text">&#9733;</div>
+                </div>
+              </div>
               <em class="text_subtitle1 grid-column_2">
                 Addressing key problem statements through UX research.
               </em>
@@ -249,11 +192,14 @@
               </div>
             </div>
 
-            <!-- Лінія між слайдами -->
             <div class="divider-line"></div>
 
-            <!-- Останній слайд -->
             <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block">
+                  <div class="brackets-text">&#9733;</div>
+                </div>
+              </div>
               <em class="text_subtitle1 grid-column_2">
                 Final design solutions and next steps.
               </em>
