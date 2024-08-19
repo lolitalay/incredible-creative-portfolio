@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative portfolio of generalist copywriter and content designer Lolita Laizan: cases, contacts, resume."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Lolita: UX Google App</title>
+    <style>
+      /* Додаємо плавну анімацію для зображень */
+      .case-view__text-block_image img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        border-radius: 10px;
+      }
 
+      .case-view__text-block_image img:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+
+      /* Стилізація іконок замість цифр */
+      .brackets-block_pink {
+        background-color: transparent;
+        border: 2px dashed #e93dc4;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .brackets-text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #e93dc4;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_custom">
+          <div class="container case-cover">
+            <p class="case-cover__text_small">
+              [Короткий опис кейсу]
+            </p>
+            <p class="text_h1">[Назва кейсу]</p>
+            <p class="case-cover__text_small case-cover__text_italic">↓</p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container case-view">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                border-radius: 37px;
+                border: 1px #e93dc4 solid;
+                padding: 16px;
+                text-align: center;
+              "
+            >
+              <div class="case-view__text-block">
+                <div class="text_subtitle1" style="padding-bottom: 10px">
+                  [Короткий вступ про кейс]
+                </div>
+                <div class="text_subtitle1">
+                  [Детальніше про завдання і підхід]
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Блоки для зображень з анімаціями та іконками -->
+        <div class="case-view__text-block grid grid_20-80">
+          <div class="flex" style="align-self: baseline; padding-top: 10px">
+            <div class="brackets-block_pink">
+              <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
+            </div>
+          </div>
+          <em class="text_subtitle1 grid-column_2">
+            [Короткий текстовий опис першого слайда]
+          </em>
+          <div
+            class="case-view__text-block_image flex flex_center-block grid-column_2"
+          >
+            <img class="" src="../assets/google1.jpg" />
+          </div>
+        </div>
+        <!-- Повторюємо блок для кожного зображення -->
+        <div class="case-view__text-block grid grid_20-80">
+          <div class="flex" style="align-self: baseline; padding-top: 10px">
+            <div class="brackets-block_pink">
+              <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
+            </div>
+          </div>
+          <em class="text_subtitle1 grid-column_2">
+            [Короткий текстовий опис другого слайда]
+          </em>
+          <div
+            class="case-view__text-block_image flex flex_center-block grid-column_2"
+          >
+            <img class="" src="../assets/google2.jpg" />
+          </div>
+        </div>
+        <!-- Продовжуйте аналогічно для слайдів 3-27 -->
+        <div class="case-view__text-block grid grid_20-80">
+          <div class="flex" style="align-self: baseline; padding-top: 10px">
+            <div class="brackets-block_pink">
+              <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
+            </div>
+          </div>
+          <em class="text_subtitle1 grid-column_2">
+            [Короткий текстовий опис останнього слайда]
+          </em>
+          <div
+            class="case-view__text-block_image flex flex_center-block grid-column_2"
+          >
+            <img class="" src="../assets/google27.jpg" />
+          </div>
+        </div>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
