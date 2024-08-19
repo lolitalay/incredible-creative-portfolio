@@ -10,16 +10,36 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>Lolita: UX Google App</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <title>Lolita: Google Case Study</title>
     <style>
-      /* Додаємо плавну анімацію для зображень */
+      /* Оформлення для вступного тексту */
+      .intro-text {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-left: 5px solid #4285F4; /* Синій колір Google */
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .intro-text h2 {
+        color: #EA4335; /* Червоний колір Google */
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .intro-text p {
+        color: #34A853; /* Зелений колір Google */
+        font-size: 1.2em;
+      }
+
+      /* Оформлення для слайдів */
       .case-view__text-block_image img {
-        transition: transform 0.3s ease, opacity 0.3s ease;
         border-radius: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
       }
 
       .case-view__text-block_image img:hover {
@@ -27,22 +47,30 @@
         opacity: 0.9;
       }
 
-      /* Стилізація іконок замість цифр */
+      /* Оформлення ліній між блоками */
+      .divider-line {
+        height: 4px;
+        background: linear-gradient(90deg, #EA4335, #FBBC05, #34A853, #4285F4);
+        margin: 40px 0;
+        border-radius: 2px;
+      }
+
+      /* Іконки замість цифр */
       .brackets-block_pink {
-        background-color: transparent;
-        border: 2px dashed #e93dc4;
+        background-color: #f8f9fa;
         border-radius: 50%;
         width: 40px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
       }
 
       .brackets-text {
         font-size: 18px;
         font-weight: bold;
-        color: #e93dc4;
+        color: #FBBC05; /* Жовтий колір Google */
       }
     </style>
     <script
@@ -57,7 +85,7 @@
           for (let i = 0; i < burg.length; i++) {
             burg[i].addEventListener("click", (event) => {
               let nav = document.querySelectorAll(".header__burger,.nav");
-              for (let j = 0; j < nav.length; j++) {
+              for (let j = 0; nav.length; j++) {
                 nav[j].classList.toggle("active");
               }
             });
@@ -71,86 +99,95 @@
     <div class="wrapper">
       <div id="header"></div>
       <main>
-        <section class="section section__cover section__cover_custom">
+        <section class="section section__cover section__cover_google">
           <div class="container case-cover">
             <p class="case-cover__text_small">
-              [Короткий опис кейсу]
+              App idea, UX research, personas, problem statements, user journey maps
             </p>
-            <p class="text_h1">[Назва кейсу]</p>
+            <p class="text_h1">Google Case Study</p>
             <p class="case-cover__text_small case-cover__text_italic">↓</p>
           </div>
         </section>
         <section class="section">
           <div class="container case-view">
-            <div
-              style="
-                width: 100%;
-                height: 100%;
-                border-radius: 37px;
-                border: 1px #e93dc4 solid;
-                padding: 16px;
-                text-align: center;
-              "
-            >
-              <div class="case-view__text-block">
-                <div class="text_subtitle1" style="padding-bottom: 10px">
-                  [Короткий вступ про кейс]
+            <div class="intro-text">
+              <h2>Introduction</h2>
+              <p>
+                In this case study, we explore the conceptualization, research, and design process 
+                for a new Google app aimed at enhancing user experience. This project involved 
+                creating user personas, mapping user journeys, and addressing key problem statements.
+              </p>
+            </div>
+
+            <!-- Слайди з зображеннями -->
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
                 </div>
-                <div class="text_subtitle1">
-                  [Детальніше про завдання і підхід]
+              </div>
+              <em class="text_subtitle1 grid-column_2">
+                Understanding the target audience and their needs.
+              </em>
+              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google1.jpg" alt="Google Persona 1"/>
+              </div>
+            </div>
+
+            <!-- Лінія між слайдами -->
+            <div class="divider-line"></div>
+
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
                 </div>
+              </div>
+              <em class="text_subtitle1 grid-column_2">
+                Mapping the user journey from start to finish.
+              </em>
+              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google2.jpg" alt="Google User Journey Map"/>
+              </div>
+            </div>
+
+            <!-- Лінія між слайдами -->
+            <div class="divider-line"></div>
+
+            <!-- Повторюємо аналогічні блоки для інших слайдів -->
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
+                </div>
+              </div>
+              <em class="text_subtitle1 grid-column_2">
+                Addressing key problem statements through UX research.
+              </em>
+              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google3.jpg" alt="Google UX Research"/>
+              </div>
+            </div>
+
+            <!-- Лінія між слайдами -->
+            <div class="divider-line"></div>
+
+            <!-- Останній слайд -->
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
+                </div>
+              </div>
+              <em class="text_subtitle1 grid-column_2">
+                Final design solutions and next steps.
+              </em>
+              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google27.jpg" alt="Google Final Design"/>
               </div>
             </div>
           </div>
         </section>
-        <!-- Блоки для зображень з анімаціями та іконками -->
-        <div class="case-view__text-block grid grid_20-80">
-          <div class="flex" style="align-self: baseline; padding-top: 10px">
-            <div class="brackets-block_pink">
-              <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
-            </div>
-          </div>
-          <em class="text_subtitle1 grid-column_2">
-            [Короткий текстовий опис першого слайда]
-          </em>
-          <div
-            class="case-view__text-block_image flex flex_center-block grid-column_2"
-          >
-            <img class="" src="../assets/google1.jpg" />
-          </div>
-        </div>
-        <!-- Повторюємо блок для кожного зображення -->
-        <div class="case-view__text-block grid grid_20-80">
-          <div class="flex" style="align-self: baseline; padding-top: 10px">
-            <div class="brackets-block_pink">
-              <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
-            </div>
-          </div>
-          <em class="text_subtitle1 grid-column_2">
-            [Короткий текстовий опис другого слайда]
-          </em>
-          <div
-            class="case-view__text-block_image flex flex_center-block grid-column_2"
-          >
-            <img class="" src="../assets/google2.jpg" />
-          </div>
-        </div>
-        <!-- Продовжуйте аналогічно для слайдів 3-27 -->
-        <div class="case-view__text-block grid grid_20-80">
-          <div class="flex" style="align-self: baseline; padding-top: 10px">
-            <div class="brackets-block_pink">
-              <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
-            </div>
-          </div>
-          <em class="text_subtitle1 grid-column_2">
-            [Короткий текстовий опис останнього слайда]
-          </em>
-          <div
-            class="case-view__text-block_image flex flex_center-block grid-column_2"
-          >
-            <img class="" src="../assets/google27.jpg" />
-          </div>
-        </div>
       </main>
       <div id="footer"></div>
     </div>
