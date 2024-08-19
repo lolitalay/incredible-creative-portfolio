@@ -22,14 +22,8 @@
         color: white;
         display: flex;
         align-items: center;
-        justify-content: center;
-      }
-
-      .case-cover__text_block {
-        text-align: center;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 8px;
+        justify-content: flex-start;
+        padding-left: 10%;
       }
 
       .case-cover__text_small {
@@ -47,59 +41,6 @@
       .case-cover__text_italic {
         font-size: 1.5em;
         color: #ffffff;
-      }
-
-      .intro-text {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-left: 5px solid #4285F4;
-        border-radius: 5px;
-        margin-bottom: 20px;
-      }
-
-      .intro-text h2 {
-        color: #EA4335;
-        font-size: 2em;
-        margin-bottom: 10px;
-      }
-
-      .intro-text p {
-        color: #34A853;
-        font-size: 1.2em;
-      }
-
-      .case-view__text-block_image img {
-        border-radius: 10px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-      }
-
-      .case-view__text-block_image img:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
-      }
-
-      .divider-line {
-        height: 4px;
-        background: linear-gradient(90deg, #EA4335, #FBBC05, #34A853, #4285F4);
-        margin: 40px 0;
-        border-radius: 2px;
-      }
-
-      .brackets-block {
-        background-color: #f0f0f0; /* Світліший фон кружечка */
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-
-      .brackets-text {
-        font-size: 18px;
-        font-weight: bold;
-        color: #FBBC05; /* Колір зірочки */
       }
     </style>
     <script
@@ -129,80 +70,15 @@
       <div id="header"></div>
       <main>
         <section class="section section__cover section__cover_google">
-          <div class="case-cover__text_block">
+          <div class="container case-cover">
             <p class="case-cover__text_small">
-              App idea, UX research, personas, problem statements, user journey maps
+              Content style guide, brand's tone and voice
             </p>
             <p class="text_h1">Google Case Study</p>
             <p class="case-cover__text_small case-cover__text_italic">↓</p>
           </div>
         </section>
-        <section class="section">
-          <div class="container case-view">
-            <div class="intro-text">
-              <h2>Introduction</h2>
-              <p>
-                In this case study, we explore the conceptualization, research, and design process 
-                for a new Google app aimed at enhancing user experience. This project involved 
-                creating user personas, mapping user journeys, and addressing key problem statements.
-              </p>
-            </div>
-
-            <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
-              </div>
-              <em class="text_subtitle1 grid-column_2">
-                Understanding the target audience and their needs.
-              </em>
-              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
-                <img src="../assets/google1.jpg" alt="Google Persona 1"/>
-              </div>
-            </div>
-
-            <div class="divider-line"></div>
-
-            <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
-              </div>
-              <em class="text_subtitle1 grid-column_2">
-                Mapping the user journey from start to finish.
-              </em>
-              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
-                <img src="../assets/google2.jpg" alt="Google User Journey Map"/>
-              </div>
-            </div>
-
-            <div class="divider-line"></div>
-
-            <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
-              </div>
-              <em class="text_subtitle1 grid-column_2">
-                Addressing key problem statements through UX research.
-              </em>
-              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
-                <img src="../assets/google3.jpg" alt="Google UX Research"/>
-              </div>
-            </div>
-
-            <div class="divider-line"></div>
-
-            <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
-              </div>
-              <em class="text_subtitle1 grid-column_2">
-                Final design solutions and next steps.
-              </em>
-              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
-                <img src="../assets/google27.jpg" alt="Google Final Design"/>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- Додатковий контент йде тут -->
       </main>
       <div id="footer"></div>
     </div>
