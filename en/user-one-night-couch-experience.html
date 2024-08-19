@@ -84,6 +84,89 @@
         margin: 40px 0;
         border-radius: 2px;
       }
+
+      /* Зірочки в кружечках замість скобок */
+      .brackets-block {
+        background-color: transparent; 
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .brackets-text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #FBBC05; /* Жовтий колір Google */
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_google">
+          <div class="case-cover__text_block">
+            <p class="case-cover__text_small">
+              App idea, UX research, personas, problem statements, user journey maps
+            </p>
+            <p class="text_h1">Google Case Study</p>
+            <p class="case-cover__text_small case-cover__text_italic">↓</p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container case-view">
+            <div class="intro-text">
+              <h2>Introduction</h2>
+              <p>
+                In this case study, we explore the conceptualization, research, and design process 
+                for a new Google app aimed at enhancing user experience. This project involved 
+                creating user personas, mapping user journeys, and addressing key problem statements.
+              </p>
+            </div>
+
+      /* Оформлення для слайдів */
+      .case-view__text-block_image img {
+        border-radius: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .case-view__text-block_image img:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+
+      /* Оформлення ліній між блоками */
+      .divider-line {
+        height: 4px;
+        background: linear-gradient(90deg, #EA4335, #FBBC05, #34A853, #4285F4);
+        margin: 40px 0;
+        border-radius: 2px;
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
