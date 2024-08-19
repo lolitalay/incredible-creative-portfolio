@@ -10,62 +10,74 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
     <link rel="manifest" href="../site.webmanifest" />
     <title>Lolita: Google Case Study</title>
     <style>
       .section__cover_google {
         background: url('../assets/google-background.jpg') no-repeat center center/cover;
-        height: 550px;
-        color: white;
+        height: 500px; 
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        padding-left: 10%;
+        text-align: center;
+      }
+
+      .case-cover {
+        text-align: center;
+        padding: 20px;
       }
 
       .case-cover__text_small {
         font-size: 1.5em;
-        color: #ffffff;
-        margin-bottom: 10px;
-        position: relative;
-        top: 60px; /* Розташування нижче на осі */
+        color: white;
+        margin: 0;
       }
 
       .text_h1 {
         font-size: 4em;
-        margin-top: 0;
-        margin-bottom: 10px;
-        color: #ffffff;
+        margin: 10px 0;
+        color: white;
       }
 
       .case-cover__text_italic {
         font-size: 1.8em;
-        color: #ffffff;
-        position: relative;
-        top: 60px; /* Розташування нижче на осі */
+        color: white;
       }
 
       .intro-text {
         background-color: #f8f9fa;
-        padding: 30px;
-        border-left: 7px solid #4285F4;
+        padding: 20px;
+        border-left: 5px solid #4285F4;
         border-radius: 5px;
         margin-bottom: 20px;
+        font-size: 1.5em; /* Збільшений розмір шрифту */
       }
 
       .intro-text h2 {
         color: #EA4335;
         font-size: 2.5em;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
 
       .intro-text p {
         color: #34A853;
-        font-size: 1.5em;
       }
 
       .case-view__text-block_image img {
@@ -85,8 +97,8 @@
         border-radius: 2px;
       }
 
-      .brackets-block {
-        background-color: #f0f0f0;
+      .brackets-block_pink {
+        background-color: #F1F3F4; /* Світлий колір для кружечків */
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -99,7 +111,7 @@
       .brackets-text {
         font-size: 18px;
         font-weight: bold;
-        color: #FBBC05;
+        color: #FBBC05; /* Жовтий колір Google */
       }
     </style>
     <script
@@ -114,7 +126,7 @@
           for (let i = 0; i < burg.length; i++) {
             burg[i].addEventListener("click", (event) => {
               let nav = document.querySelectorAll(".header__burger,.nav");
-              for (let j = 0; nav.length; j++) {
+              for (let j = 0; j < nav.length; j++) {
                 nav[j].classList.toggle("active");
               }
             });
@@ -149,8 +161,10 @@
             </div>
 
             <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка у кружечку -->
+                </div>
               </div>
               <em class="text_subtitle1 grid-column_2">
                 Understanding the target audience and their needs.
@@ -163,8 +177,10 @@
             <div class="divider-line"></div>
 
             <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка у кружечку -->
+                </div>
               </div>
               <em class="text_subtitle1 grid-column_2">
                 Mapping the user journey from start to finish.
@@ -177,8 +193,10 @@
             <div class="divider-line"></div>
 
             <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка у кружечку -->
+                </div>
               </div>
               <em class="text_subtitle1 grid-column_2">
                 Addressing key problem statements through UX research.
@@ -191,8 +209,10 @@
             <div class="divider-line"></div>
 
             <div class="case-view__text-block grid grid_20-80">
-              <div class="brackets-block">
-                <div class="brackets-text">&#9733;</div>
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка у кружечку -->
+                </div>
               </div>
               <em class="text_subtitle1 grid-column_2">
                 Final design solutions and next steps.
