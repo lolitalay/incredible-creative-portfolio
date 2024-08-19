@@ -16,18 +16,34 @@
     <link rel="manifest" href="../site.webmanifest" />
     <title>Lolita: Google Case Study</title>
     <style>
-      
       .section__cover_google {
         background: url('../assets/google-background.jpg') no-repeat center center/cover;
         height: 500px; /* Висота секції з фоном */
         color: white; /* Колір тексту на фоні */
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-end; /* Вирівнюємо елементи по нижньому краю */
+        justify-content: flex-end; /* Вирівнюємо елементи справа */
+        padding: 20px; /* Внутрішній відступ */
       }
 
-      .case-cover {
-        text-align: center;
+      .case-cover__text_block {
+        max-width: 500px;
+        text-align: right;
+        background: rgba(0, 0, 0, 0.5); /* Напівпрозоре тло */
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .case-cover__text_small {
+        font-size: 1em;
+        color: #ffffff; /* Білий колір тексту */
+      }
+
+      .text_h1 {
+        font-size: 2.5em;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #ffffff; /* Білий колір тексту */
       }
 
       /* Оформлення для вступного тексту */
@@ -68,24 +84,6 @@
         margin: 40px 0;
         border-radius: 2px;
       }
-
-      /* Іконки замість цифр */
-      .brackets-block_pink {
-        background-color: transparent; /* Прибираємо рожевий фон */
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-
-      .brackets-text {
-        font-size: 18px;
-        font-weight: bold;
-        color: #FBBC05; /* Жовтий колір Google */
-      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -114,7 +112,7 @@
       <div id="header"></div>
       <main>
         <section class="section section__cover section__cover_google">
-          <div class="container case-cover">
+          <div class="case-cover__text_block">
             <p class="case-cover__text_small">
               App idea, UX research, personas, problem statements, user journey maps
             </p>
@@ -135,11 +133,6 @@
 
             <!-- Слайди з зображеннями -->
             <div class="case-view__text-block grid grid_20-80">
-              <div class="flex" style="align-self: baseline; padding-top: 10px">
-                <div class="brackets-block_pink">
-                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
-                </div>
-              </div>
               <em class="text_subtitle1 grid-column_2">
                 Understanding the target audience and their needs.
               </em>
@@ -152,11 +145,6 @@
             <div class="divider-line"></div>
 
             <div class="case-view__text-block grid grid_20-80">
-              <div class="flex" style="align-self: baseline; padding-top: 10px">
-                <div class="brackets-block_pink">
-                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
-                </div>
-              </div>
               <em class="text_subtitle1 grid-column_2">
                 Mapping the user journey from start to finish.
               </em>
@@ -170,11 +158,6 @@
 
             <!-- Повторюємо аналогічні блоки для інших слайдів -->
             <div class="case-view__text-block grid grid_20-80">
-              <div class="flex" style="align-self: baseline; padding-top: 10px">
-                <div class="brackets-block_pink">
-                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
-                </div>
-              </div>
               <em class="text_subtitle1 grid-column_2">
                 Addressing key problem statements through UX research.
               </em>
@@ -188,11 +171,6 @@
 
             <!-- Останній слайд -->
             <div class="case-view__text-block grid grid_20-80">
-              <div class="flex" style="align-self: baseline; padding-top: 10px">
-                <div class="brackets-block_pink">
-                  <div class="brackets-text">&#9733;</div> <!-- Іконка замість цифри -->
-                </div>
-              </div>
               <em class="text_subtitle1 grid-column_2">
                 Final design solutions and next steps.
               </em>
