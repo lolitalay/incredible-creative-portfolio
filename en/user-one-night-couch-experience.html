@@ -10,19 +10,65 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>Lolita: guideline, tone of voice</title>
-     <style>
-          .intro-text {
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+    <title>Lolita: Google Case Study</title>
+    <style>
+      .section__cover_google {
+        background: url('../assets/google-background.jpg') no-repeat center center/cover;
+        height: 400px; /* Зменшена висота секції */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0; /* Зменшення відстані між секціями */
+      }
+
+      .case-cover {
+        text-align: center;
+        padding: 10px 20px; /* Зменшений padding */
+      }
+
+      .case-cover__text_small {
+        font-size: 1.5em;
+        color: white;
+        margin: 0;
+      }
+
+      .text_h1 {
+        font-size: 3.5em;
+        margin: 10px 0;
+        color: white;
+      }
+
+      .case-cover__text_italic {
+        font-size: 1.8em;
+        color: white;
+      }
+
+      .intro-text {
         background-color: #f8f9fa;
         padding: 20px;
         border-left: 5px solid #4285F4;
         border-radius: 5px;
         margin-bottom: 20px;
-        font-size: 1.5em; /* Збільшений розмір шрифту */
+        font-size: 1.5em;
       }
 
       .intro-text h2 {
@@ -52,8 +98,8 @@
         border-radius: 2px;
       }
 
-      .brackets-block_beige {
-        background-color: #F1F3F4; /* Світлий колір для кружечків */
+      .brackets-block_pink {
+        background-color: #F1F3F4;
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -66,45 +112,9 @@
       .brackets-text {
         font-size: 18px;
         font-weight: bold;
-        color: #FBBC05; /* Жовтий колір Google */
+        color: #FBBC05;
       }
     </style>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(function () {
-        $("#header").load("header-dark.html", function () {
-          let burg = document.querySelectorAll(".header__burger, .nav");
-          for (let i = 0; i < burg.length; i++) {
-            burg[i].addEventListener("click", (event) => {
-              let nav = document.querySelectorAll(".header__burger,.nav");
-              for (let j = 0; j < nav.length; j++) {
-                nav[j].classList.toggle("active");
-              }
-            });
-          }
-        });
-        $("#footer").load("footer.html");
-      });
-    </script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div id="header"></div>
-      <main>
-        <section class="section section__cover section__cover_saphira">
-          <div class="container case-cover">
-            <p class="case-cover__text_small">
-              Content style guide, brand's tone and voice
-            </p>
-            <p class="text_h1">Saphira Agency</p>
-            <p class="case-cover__text_small case-cover__text_italic">↓</p>
-          </div>
-        </section>
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -153,7 +163,9 @@
 
             <div class="case-view__text-block grid grid_20-80">
               <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
                   <div class="brackets-text">&#9733;</div> <!-- Іконка у кружечку -->
+                </div>
               </div>
               <em class="text_subtitle1 grid-column_2">
                 Understanding the target audience and their needs.
