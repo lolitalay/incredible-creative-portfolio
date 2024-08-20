@@ -14,40 +14,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Lolita: Google Case Study</title>
-    <style>
-      .section__cover_google {
-        background: url('../assets/google-background.jpg') no-repeat center center/cover;
-        height: 550px; 
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        text-align: left;
-      }
-
-      .case-cover {
-        text-align: center;
-        padding: 20px;
-      }
-
-      .case-cover__text_small {
-        font-size: 1.5em;
-        color: white;
-        margin: 0;
-      }
-
-      .text_h1 {
-        font-size: 4em;
-        margin: 10px 0;
-        color: white;
-      }
-
-      .case-cover__text_italic {
-        font-size: 1.8em;
-        color: white;
-      }
-
-      .intro-text {
+    <title>Lolita: guideline, tone of voice</title>
+     <style>
+          .intro-text {
         background-color: #f8f9fa;
         padding: 20px;
         border-left: 5px solid #4285F4;
@@ -83,7 +52,7 @@
         border-radius: 2px;
       }
 
-      .brackets-block_pink {
+      .brackets-block_beige {
         background-color: #F1F3F4; /* Світлий колір для кружечків */
         border-radius: 50%;
         width: 40px;
@@ -100,6 +69,42 @@
         color: #FBBC05; /* Жовтий колір Google */
       }
     </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_saphira">
+          <div class="container case-cover">
+            <p class="case-cover__text_small">
+              Content style guide, brand's tone and voice
+            </p>
+            <p class="text_h1">Saphira Agency</p>
+            <p class="case-cover__text_small case-cover__text_italic">↓</p>
+          </div>
+        </section>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
