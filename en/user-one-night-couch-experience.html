@@ -36,22 +36,6 @@
         $("#footer").load("footer.html");
       });
     </script>
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <div id="header"></div>
-      <main>
-        <section class="section section__cover section__cover_google">
-          <div class="container case-cover">
-            <p class="case-cover__text_small">
-              Core concept, naming, user research, personas, problem statements, user journey maps
-            </p>
-            <p class="text_h1">Google UX Case</p>
-            <p class="case-cover__text_small case-cover__text_italic">*in progress</p>
-          </div>
-        </section>
-
     <style>
       .section__cover_google {
         background: url('../assets/google-background.jpg') no-repeat center center/cover;
@@ -77,9 +61,18 @@
         color: #34A853;
       }
 
-      .case-view__text-block_image img {
+      .case-view__text-block_image {
         border-radius: 10px;
         transition: transform 0.3s ease, opacity 0.3s ease;
+        text-align: center;
+      }
+
+      .case-view__text-block_image img {
+        display: inline-block;
+        width: 100%;
+        max-width: 900px; /* Максимальна ширина слайдів */
+        border-radius: 10px;
+        margin-bottom: 20px;
       }
 
       .case-view__text-block_image img:hover {
@@ -94,6 +87,21 @@
         border-radius: 2px;
       }
     </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_google">
+          <div class="container case-cover">
+            <p class="case-cover__text_small">
+              Core concept, naming, user research, personas, problem statements, user journey maps
+            </p>
+            <p class="text_h1">Google UX Case</p>
+            <p class="case-cover__text_small case-cover__text_italic">*in progress</p>
+          </div>
+        </section>
 
         <section class="section">
           <div class="container case-view">
