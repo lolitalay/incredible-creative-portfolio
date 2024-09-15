@@ -1,37 +1,231 @@
-<footer class="footer" style="text-align: right;">
-  <p class="footer__text">Долучайтесь: lolita.laizan@gmail.com +1.646.986.8904
-  </p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative portfolio of generalist copywriter and content designer Lolita Laizan: cases, contacts, resume."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Lolita: Google UX Case</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_google">
+          <div class="container case-cover">
+            <p class="case-cover__text_small">
+              Core concept, naming, user research, personas, problem statements, user journey maps
+            </p>
+            <p class="text_h1">Google UX Case</p>
+            <p class="case-cover__text_small case-cover__text_italic">*in progress</p>
+          </div>
+        </section>
+    <style>
+      .section__cover_google {
+        background: url('../assets/google-background.jpg') no-repeat center center/cover;
+        height: 550px; /* Висота секції */
+        display: flex;
+      }
+      .intro-text {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-left: 5px solid #4285F4;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+      }
 
-  <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
-    <div class="nav__action">
-      <a
-        class="icon-link"
-        href="https://www.instagram.com/lola.laizan/"
-        target="_blank"
-        aria-label="Instagram"
-      >
-        <img src="./assets/instagram-light.svg" alt="Instagram" class="icon" />
-      </a>
+      .intro-text h2 {
+        color: #EA4335;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .intro-text p {
+        color: #34A853;
+      }
+
+      .case-view__text-block_image img {
+        border-radius: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .case-view__text-block_image img:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+
+      .divider-line {
+        height: 4px;
+        background: linear-gradient(90deg, #EA4335, #FBBC05, #34A853, #4285F4);
+        margin: 40px 0;
+        border-radius: 2px;
+      }
+
+      .brackets-block_pink {
+        background-color: #F1F3F4;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .brackets-text {
+        font-size: 18px;
+        font-weight: bold;
+        color: #FBBC05;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+        <section class="section">
+          <div class="container case-view">
+            <div class="intro-text">
+              <p>
+                As part of the Google UX Design course, I am developing an app from scratch for a low-cost one-night 
+                stays in New York City within a network of friends or friends of friends. At this point, I have created 
+                the core concept of the service, its name, and conducted user research. The project is still in progress 
+                so soon you can expect design iterations: wireframes, prototypes, and mockups.
+              </p>
+            </div>
+
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка у кружечку -->
+              </div>
+              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case01.jpg" alt="Google Case Name"/>
+              </div>
+               <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case02.jpg" alt="Project Overview"/>
+              </div>
+                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case03.jpg" alt="Project Overview"/>
+              </div>
+            </div>
+
+            <div class="divider-line"></div>
+
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                  <div class="brackets-text">&#9733;</div> <!-- Іконка у кружечку -->
+              </div>
+                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case05.jpg" alt="User Research Plan"/>
+              </div>
+               <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case06.jpg" alt="Google Case User Research Summary"/>
+              </div>
+                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case07.jpg" alt="User Pain Points"/>
+              </div>  
+                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case08.jpg" alt="Persona #1: Emily"/>
+              </div>      
+                 <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case09.jpg" alt="Persona #2: Ethan"/>
+              </div>
+                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case10.jpg" alt="User Journey Map: Emily"/>
+              </div>  
+                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google_case11.jpg" alt="User Journey Map: Ethan"/>
+              </div>               
+            </div>
+
+            <div class="divider-line"></div>
+<!--
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> 
+                </div>
+              </div>
+              <em class="text_subtitle1 grid-column_2">
+                Addressing key problem statements through UX research.
+              </em>
+              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google3.jpg" alt="Google UX Research"/>
+              </div>
+            </div>
+
+            <div class="divider-line"></div>
+
+            <div class="case-view__text-block grid grid_20-80">
+              <div class="flex" style="align-self: baseline; padding-top: 10px">
+                <div class="brackets-block_pink">
+                  <div class="brackets-text">&#9733;</div> 
+                </div>
+              </div>
+              <em class="text_subtitle1 grid-column_2">
+                Final design solutions and next steps.
+              </em>
+              <div class="case-view__text-block_image flex flex_center-block grid-column_2">
+                <img src="../assets/google27.jpg" alt="Google Final Design"/>
+              </div>
+            </div>
+  -->
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
     </div>
-    <div class="nav__action">
-      <a
-        class="icon-link"
-        href="https://www.linkedin.com/in/lolita-laizan/"
-        target="_blank"
-        aria-label="Linkedin"
-      >
-        <img src="./assets/linkedin-light.svg" alt="LinkedIn" class="icon linkedin" />
-      </a>
-    </div>
-    <div class="nav__action">
-      <a
-        class="icon-link"
-        href="mailto:lolita.laizan@gmail.com"
-        target="_blank"
-        aria-label="Email"
-      >
-        <img src="./assets/mail-light.png" alt="Mail" class="icon mail" />
-      </a>
-    </div>
-  </div>
-</footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
+ChatGPT said:
+ChatGPT
