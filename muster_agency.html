@@ -14,10 +14,51 @@
     <title>Лоліта: Muster Agency</title>
     <style>
       .section__cover_muster_agency {
-        background-image: url('./assets/muster_agency_background.jpg'); /* Замініть шлях на свій */
-        background-size: cover; /* Зайняти весь простір */
-        background-position: center; /* Центрування зображення */
-        height: 400px; /* Висота секції (може бути змінена) */
+        background-image: url('./assets/muster_agency_background.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+      }
+
+      .case-container {
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #f8f8f8; /* Світлий фон для виділення */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Легка тінь */
+        margin-bottom: 20px; /* Відступи між блоками */
+      }
+
+      .case-title {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .case-description {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.5; /* Інтерлініяж */
+      }
+
+      .case-image {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0974e8; /* Основний колір */
+        margin-top: 40px;
+      }
+
+      .highlight {
+        background-color: #eaf5ff; /* Світле підсвічування */
+        border-left: 5px solid #0974e8; /* Ліва смужка */
+        padding: 10px 15px;
+        margin-bottom: 20px;
       }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -47,301 +88,65 @@
           <div class="container case-cover" style="z-index: 2; padding-bottom: 20px">
             <p class="text_h1 _light">Muster Agency</p>
             <p class="case-cover__text_small _light">Ахітектура контенту, UX райтинг, контент для сайту</p>
-            <p class="case-cover__text_small _light"></p>
           </div>
         </section>
         <section class="section" style="position: relative">
           <div class="container case-view">
-            <div style="width: 100%; height: 100%; border-radius: 37px; padding: 16px;">
-              <div class="case-view__text-block grid grid_two" style="margin-block: 0">
-                <div class="grid-column_1">
-                  <div class="text_subtitle1" style="padding-bottom: 10px">
-                    У довоєнний час, коли ще існував COVID-19, Володимир Зеленський впровадив програму соціальної допомоги єПідтримка. 
-                    Повністю вакцинованим українцям держава виплачувала по 1000 грн, які можна було витратити в тих категоріях бізнесу, які найбільш постраждали від карантинів.
-                  </div>
-                </div>
-                <div class="flex flex_center-block case-view__text-block_image">
-                  <img class="" src="../assets/esupport.gif" />
-                </div>
+            <div class="case-container">
+              <h2 class="case-title">Задача</h2>
+              <p class="case-description">
+                У довоєнний час, коли ще існував COVID-19, Володимир Зеленський впровадив програму соціальної допомоги єПідтримка.
+                Повністю вакцинованим українцям держава виплачувала по 1000 грн, які можна було витратити в тих категоріях бізнесу, які найбільш постраждали від карантинів.
+              </p>
+              <div class="flex flex_center-block case-view__text-block_image">
+                <img class="case-image" src="../assets/esupport.gif" alt="Зображення підтримки" />
               </div>
             </div>
           </div>
         </section>
-        <section class="section section__cover" style="position: relative; height: auto; padding-block: 0">
-          <div class="case-view__text-block grid grid_40-60" style="z-index: 3; margin-inline: 40px; padding: 0px 16px">
-            <div class="flex flex_center-block case-view__text-block_image">
-              <img class="" src="../assets/esupport-card.png" style="height: auto" />
-            </div>
-            <div class="text_subtitle1 _light" style="padding: 8px">
-              В мене було 3 дні, щоб з нуля зрозуміти суть програми й створити комунікацію про неї з Україною.
-              Я зібрала інформацію у представників залучених міністерств, які відповідали за проєкт зі свого боку. 
-              На основі неї створила технічний текст, який потім перетворила на весь копі для проєкту.
-            </div>
-          </div>
-          <div style="background-color: #272727; position: absolute; width: 100%; height: 100%;"></div>
-        </section>
+
         <section class="section" style="position: relative">
           <div class="container case-view">
-            <div style="width: 100%; height: 100%; border-radius: 37px; padding: 16px;"></div>
-            <div style="width: 100%; height: 100%; text-align: start; color: #0974e8; font-size: 40.65px; font-family: Cormorant Garamond; font-style: italic; font-weight: 700; line-height: 60.78px; word-wrap: break-word;">
-              [ САЙТ ]
-            </div>
-            <div style="padding-left: 5%">
-              <div class="case-view__text-block grid grid_10-90">
-                <div class="flex" style="align-self: baseline; padding-top: 10px">
-                  <div class="grid-column_1 blue" style="width: 100%; height: 100%; border: 1px #0974e8 solid"></div>
-                </div>
-                <div class="text_subtitle1 grid-column_2">
-                  Знаючи, що увага користувача до тексту на сайті виглядає, як літера F, я вибудувала інформацію так, щоб подати найважливіше на піку концентрації уваги.
-                  <br />
-                  <br />
-                  Ключові повідомлення розмістила на головній сторінці й додала навігацію для користувачів, які повертаються.
-                </div>
-                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
-                  <img class="" src="../assets/esupport-2.png" style="width: 100%" />
-                </div>
-              </div>
-              <div class="case-view__text-block grid grid_10-90">
-                <div class="flex" style="align-self: baseline; padding-top: 10px">
-                  <div class="grid-column_1 blue" style="width: 100%; height: 100%; border: 1px #0974e8 solid"></div>
-                </div>
-                <div class="text_subtitle1 grid-column_2">
-                  На другому екрані прописала хто може отримати допомогу. 
-                  Це головний фільтр авдиторії. Якщо людина не підходить хоч за одним із критеріїв — далі сайт можна не читати.
-                </div>
-                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
-                  <img class="" src="../assets/esupport-3.png" style="width: 100%" />
-                </div>
-              </div>
-              <div class="case-view__text-block grid grid_10-90">
-                <div class="flex" style="align-self: baseline; padding-top: 10px">
-                  <div class="grid-column_1 blue" style="width: 100%; height: 100%; border: 1px #0974e8 solid"></div>
-                </div>
-                <div class="text_subtitle1 grid-column_2">
-                  На третьому екрані — кроки участі в програмі в двох форматах: в тексті й відео.
-                </div>
-                <div class="case-view__text-block_image flex flex_center-block grid-column_2">
-                  <img class="" src="../assets/esupport-4.png" style="width: 100%" />
-                </div>
-              </div>
-              <div class="case-view__text-block grid grid_10-90">
-                <div class="case-view__text-block_image flex flex_center-block grid-column_2"
-                >
-                  <img
-                    class=""
-                    src="../assets/esupport-4.png"
-                    style="width: 100%"
-                  />
-                </div>
-              </div>
-              <div class="case-view__text-block grid grid_10-90">
-                <div
-                  class="flex"
-                  style="align-self: baseline; padding-top: 10px"
-                >
-                  <div
-                    class="grid-column_1 blue"
-                    style="width: 100%; height: 100%; border: 1px #0974e8 solid"
-                  ></div>
-                </div>
-                <div class="text_subtitle1 grid-column_2">
-                  На четвертому екрані пояснила як відкрити картку для державних виплат з переліком банків-партнерів.
-                </div>
-                <div
-                  class="case-view__text-block_image flex_center-block grid-column_2 grid grid_two"
-                  style="padding-block: 0px; row-gap: 0"
-                >
-                  <img class="grid-column_1" src="../assets/esupport-5.png" />
-                  <img class="grid-column_2" src="../assets/esupport-6.png" />
-                </div>
-              </div>
-              <div class="case-view__text-block grid grid_10-90">
-                <div
-                  class="flex"
-                  style="align-self: baseline; padding-top: 10px"
-                >
-                  <div
-                    class="grid-column_1 blue"
-                    style="width: 100%; height: 100%; border: 1px #0974e8 solid"
-                  ></div>
-                </div>
-                <div class="text_subtitle1 grid-column_2">
-                  Далі — розділ з поясненням де можна витратити гроші, розділений на блоки.
-                </div>
-                <div class="grid-column_2 grid grid_10-130" style="gap: 10px">
-                 <em
-                      class="grid-column_1 text_h5 blue"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        color: #0974e8;
-                        line-height: 80%;
-                        margin-top: -3px;
-                      "
-                    >
-                      001
-                    </em>
-                  <div class="text_subtitle1 grid-column_2">
-                    Почала з місії послуги, щоб знизити негативну реакцію населення через обмеження на категорії витрат.
-                  </div>
-                </div>
-                <div
-                  class="case-view__text-block_image flex flex_center-block grid-column_2"
-                >
-                  <img
-                    class=""
-                    src="../assets/esupport-7.png"
-                    style="width: 100%"
-                  />
-                </div>
-                <div class="grid-column_2 grid grid_10-130" style="gap: 10px">
-                  <div class="flex" style="align-self: baseline">
-                    <em
-                      class="grid-column_1 text_h5 blue"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        color: #0974e8;
-                        line-height: 80%;
-                        margin-top: -3px;
-                      "
-                    >
-                      002
-                    </em>
-                  </div>
-                  <div class="text_subtitle1 grid-column_2">
-                    Після — великий блок з простим поясненням складного алгоритму як це працює. 
-                    Тут одразу розʼяснила потенційно найпоширенішу проблему, через яку можуть не вдатись покупки.
-                  </div>
-                </div>
-                <div
-                  class="case-view__text-block_image flex flex_center-block grid-column_2"
-                >
-                  <img
-                    class=""
-                    src="../assets/esupport-8.png"
-                    style="width: 100%"
-                  />
-                </div>
-                <div class="grid-column_2 grid grid_10-130" style="gap: 10px">
-                  <div class="flex" style="align-self: baseline">
-                    <em
-                      class="grid-column_1 text_h5 blue"
-                      style="
-                        width: 100%;
-                        height: 100%;
-                        color: #0974e8;
-                        line-height: 80%;
-                        margin-top: -3px;
-                      "
-                    >
-                      003
-                    </em>
-                  </div>
-                  <div class="text_subtitle1 grid-column_2">
-                    І візуальна частина, щоб розвантажити прийняття для тих, хто не хоче читати.
-                  </div>
-                </div>
-                <div
-                  class="case-view__text-block_image flex flex_center-block grid-column_2"
-                >
-                  <img
-                    class=""
-                    src="../assets/esupport-9.png"
-                    style="width: 100%"
-                  />
-                </div>
-              </div>
-              <div class="case-view__text-block grid grid_10-90">
-                <div
-                  class="flex"
-                  style="align-self: baseline; padding-top: 10px"
-                >
-                  <div
-                    class="grid-column_1 blue"
-                    style="width: 100%; height: 100%; border: 1px #0974e8 solid"
-                  ></div>
-                </div>
-                <div class="text_subtitle1 grid-column_2">
-                  Наостанок — поширені запитання, розділені на категорії.
-                </div>
-                <div
-                  class="case-view__text-block_image flex flex_center-block grid-column_2"
-                >
-                  <img
-                    class=""
-                    src="../assets/esupport-10.png"
-                    style="width: 100%"
-                  />
-                </div>
+            <div class="case-container">
+              <h2 class="case-title">Комунікаційна стратегія</h2>
+              <p class="case-description">
+                В мене було 3 дні, щоб з нуля зрозуміти суть програми й створити комунікацію про неї з Україною.
+                Я зібрала інформацію у представників залучених міністерств, які відповідали за проєкт зі свого боку. 
+                На основі неї створила технічний текст, який потім перетворила на весь копі для проєкту.
+              </p>
+              <div class="flex flex_center-block case-view__text-block_image">
+                <img class="case-image" src="../assets/esupport-card.png" alt="Картка підтримки" />
               </div>
             </div>
-            <div
-              style="
-                width: 100%;
-                height: 100%;
-                text-align: start;
-                color: #0974e8;
-                font-size: 40.65px;
-                font-family: Cormorant Garamond;
-                font-style: italic;
-                font-weight: 700;
-                line-height: 60.78px;
-                word-wrap: break-word;
-              "
-            >
-              [ ФЛОУ ]
-            </div>
-            <div>
-              <div class="flex flex_center-block">
-                <em class="text_subtitle1 padding-block_desktop">
-                  У флоу в розділі програми я прописала повний шлях користувача від моменту 
-                  заходу в застосунок до зарахування грошей на картку.
-                </em>
+          </div>
+        </section>
+
+        <section class="section" style="position: relative">
+          <div class="container case-view">
+            <div class="case-container">
+              <h2 class="section-title">Флоу</h2>
+              <div class="highlight">
+                У флоу в розділі програми я прописала повний шлях користувача від моменту заходу в застосунок до зарахування грошей на картку.
               </div>
               <div class="case-view__text-block_image grid grid_five">
-                <img
-                  class=""
-                  src="../assets/esupport-11.png"
-                  style="height: auto"
-                />
-                <img
-                  class=""
-                  src="../assets/esupport-12.png"
-                  style="height: auto"
-                />
-                <img
-                  class=""
-                  src="../assets/esupport-13.png"
-                  style="height: auto"
-                />
-                <img
-                  class=""
-                  src="../assets/esupport-14.png"
-                  style="height: auto"
-                />
-                <img
-                  class=""
-                  src="../assets/esupport-15.png"
-                  style="height: auto"
-                />
+                <img src="../assets/esupport-11.png" alt="Флоу 1" style="height: auto" />
+                <img src="../assets/esupport-12.png" alt="Флоу 2" style="height: auto" />
+                <img src="../assets/esupport-13.png" alt="Флоу 3" style="height: auto" />
+                <img src="../assets/esupport-14.png" alt="Флоу 4" style="height: auto" />
+                <img src="../assets/esupport-15.png" alt="Флоу 5" style="height: auto" />
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="flex flex_center-block">
-              <em
-                class="text_subtitle1 padding-block_desktop"
-                style="
-                  border: 1px #000 solid;
-                  border-radius: 7px;
-                  padding: 30px;
-                  max-width: 700px;
-                "
-              >
-                За перші 2 місяці існування програми, 8+ мільйонів українців отримали 
-                виплати єПідтримки через Дію та витратили 3 мільярди гривень на підтримку бізнесів. 
-                Найбільшу частину грошей, отриманих через єПідримку, українці витратили на книжки.
-              </em>
+        <section class="section" style="position: relative">
+          <div class="container case-view">
+            <div class="case-container">
+              <h2 class="case-title">Результати</h2>
+              <p class="case-description">
+                За перші 2 місяці існування програми, 8+ мільйонів українців отримали виплати єПідтримки через Дію та витратили 3 мільярди гривень на підтримку бізнесів.
+                Найбільшу частину грошей, отриманих через єПідтримку, українці витратили на книжки.
+              </p>
             </div>
           </div>
         </section>
