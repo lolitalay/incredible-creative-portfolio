@@ -8,168 +8,138 @@
       name="description"
       content="Креативне портфоліо креативної копірайтерки та контент-дизайнерки: кейси, контакти, резюме."
     />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
-    <title>Muster Agency Case Study</title>
-    <style>
-      /* Основні стилі */
-      body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f4f4f4;
-        color: #333;
-      }
-      .wrapper {
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 20px;
-      }
-      .header, .footer {
-        text-align: center;
-        background-color: #000;
-        color: #fff;
-        padding: 20px 0;
-      }
-      .section {
-        padding: 60px 20px;
-        margin-bottom: 40px;
-        border-bottom: 1px solid #e0e0e0;
-      }
-      .section-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-        align-items: center;
-      }
-      .section-content.reverse {
-        grid-template-columns: 1fr 1fr;
-        direction: rtl;
-      }
-      .text-block {
-        font-size: 18px;
-        line-height: 1.6;
-      }
-      .text-block h3 {
-        font-size: 28px;
-        margin-bottom: 15px;
-      }
-      .image-block img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      .cta-btn {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #0974e8;
-        color: #fff;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        margin-top: 20px;
-      }
-      .cta-btn:hover {
-        background-color: #075bb0;
-      }
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Лоліта: Muster Agency</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
     <div class="wrapper">
-      <!-- Хедер -->
-      <div id="header" class="header">
-        <h1>Muster Agency</h1>
-        <nav>
-          <a href="#" class="nav-link">Послуги</a>
-          <a href="#" class="nav-link">Про нас</a>
-          <a href="#" class="nav-link">Кейси</a>
-          <a href="#" class="nav-link">Контакти</a>
-        </nav>
-      </div>
-
-      <!-- Основний контент -->
+      <div id="header"></div>
       <main>
-        <!-- Перший блок: контент з поясненням -->
-        <section class="section">
-          <div class="section-content">
-            <div class="text-block">
-              <h3>Інформаційна архітектура</h3>
-              <p>
-                В процесі роботи над сайтом, я створила інформаційну архітектуру, яка відображає цінності та експертизу агенції. Це дозволило структурувати контент так, щоб користувач міг легко знайти потрібну інформацію, а навігаційна структура забезпечувала зручність та інтуїтивність.
-              </p>
-            </div>
-            <div class="image-block">
-              <img src="screenshot-1.png" alt="Скріншот інформаційної архітектури сайту" />
+        <section class="section section__cover" style="background-image: url('../assets/background-image.png');">
+          <div class="container case-cover" style="z-index: 2; padding-bottom: 20px">
+            <p class="text_h1 _light">Muster Agency</p>
+            <p class="case-cover__text_small _light">
+              Інформаційна архітектура, UX райтинг, контент для сайту
+            </p>
+          </div>
+        </section>
+
+        <section class="section" style="position: relative">
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1" style="padding-bottom: 10px">
+                Muster Agency — американська маркетингова агенція, яка виконує роль Fractional CMO для малих і середніх бізнесів на американському ринку у форматі місячної підписки на послуги.
+                В агенції я виконувала роль UX райтерки, контент-дизайнерки та креативної копірайтерки. В команді з розробником та UX-дизайнером я з нуля створила сучасний, привабливий та інформативний сайт, який відображає цінності агенції, демонструє її експертизу та ефективно конвертує користувачів у потенційних клієнтів.
+              </div>
             </div>
           </div>
         </section>
 
-        <!-- Другий блок: контент з поясненням -->
         <section class="section">
-          <div class="section-content reverse">
-            <div class="text-block">
-              <h3>UX райтинг</h3>
-              <p>
-                Я розробила текстовий контент для всіх сторінок, включаючи головну, сторінку послуг, та розділ "Про нас". Зробила акцент на ясності, переконливості та стислості тексту, щоб зменшити когнітивне навантаження на користувачів.
-              </p>
-            </div>
-            <div class="image-block">
-              <img src="screenshot-2.png" alt="Скріншот з прикладом UX райтингу на сайті" />
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1">
+                У процесі роботи я реалізувала повний цикл UX-копірайтингу, включаючи розробку інформаційної архітектури, написання текстів для всіх сторінок та створення ефективних CTA (Call-to-Action), орієнтованих на бізнес-цілі.
+              </div>
+              <img src="../assets/screenshot-1.png" alt="Скриншот сайту 1" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
           </div>
         </section>
 
-        <!-- Третій блок: контент з поясненням -->
         <section class="section">
-          <div class="section-content">
-            <div class="text-block">
-              <h3>Контент-дизайн</h3>
-              <p>
-                Я працювала над контент-дизайном сайту, щоб забезпечити візуальну узгодженість тексту з загальним стилем дизайну. Використовувала графічні елементи та візуальні індикатори для полегшення розуміння основних повідомлень.
-              </p>
-            </div>
-            <div class="image-block">
-              <img src="screenshot-3.png" alt="Скріншот з прикладом контент-дизайну на сайті" />
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1">
+                На головній сторінці я подала прямий та зрозумілий меседж у заголовку, який чітко пояснює УТП (унікальну торгову пропозицію) послуг, а у підзаголовку коротко розкрила формат співпраці. Щоб одразу залучити користувача, додала клікабельну галерею з прев’ю кейсів та кнопку з CTA для стимулювання подальшої взаємодії та підписки на послуги.
+              </div>
+              <img src="../assets/screenshot-2.png" alt="Скриншот сайту 2" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
           </div>
         </section>
 
-        <!-- Четвертий блок: контент з поясненням -->
         <section class="section">
-          <div class="section-content reverse">
-            <div class="text-block">
-              <h3>Розробка CTA</h3>
-              <p>
-                Я створила кілька варіантів ефективних CTA (Call-to-Action), розмістила їх на ключових сторінках та оптимізувала для підвищення конверсій. Це включає в себе заклики на консультацію, підписку на послуги та завантаження додаткових матеріалів.
-              </p>
-            </div>
-            <div class="image-block">
-              <img src="screenshot-4.png" alt="Скріншот з CTA на сайті Muster Agency" />
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1">
+                В хедері я розмістила навігаційні елементи з основними розділами сайту в хронологічній послідовності, щоб користувачі могли легко знайти потрібну інформацію.
+              </div>
+              <img src="../assets/screenshot-3.png" alt="Скриншот сайту 3" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
           </div>
         </section>
 
-        <!-- П'ятий блок: контент з поясненням -->
         <section class="section">
-          <div class="section-content">
-            <div class="text-block">
-              <h3>Завершення роботи</h3>
-              <p>
-                Проєкт Muster Agency став успішним прикладом комплексного підходу до створення сайту, який одночасно виконує бізнес-завдання клієнта та задовольняє потреби користувача. Сайт отримав позитивні відгуки за зручність використання та ясність комунікації.
-              </p>
-              <a href="#" class="cta-btn">Book a strategy session</a>
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1">
+                На другому екрані я розташувала розділ з описом послуг, який одразу демонструє, які саме больові точки бізнесу агенція допомагає вирішити.
+              </div>
+              <img src="../assets/screenshot-4.png" alt="Скриншот сайту 4" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
-            <div class="image-block">
-              <img src="screenshot-5.png" alt="Фінальний скріншот сайту Muster Agency" />
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1">
+                У наступних секціях я зосередилася на побудові довіри до компанії через емоційний зв’язок та реальні кейси.
+              </div>
+              <img src="../assets/screenshot-5.png" alt="Скриншот сайту 5" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1">
+                У розділі “Why Muster Agency?” я подала RTB (reason to believe) — ключові аргументи, які відповідають на запити потенційних клієнтів, що підсилює довіру до компанії.
+              </div>
+              <img src="../assets/screenshot-6.png" alt="Скриншот сайту 6" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container case-view">
+            <div style="padding: 16px;">
+              <div class="text_subtitle1">
+                На завершальних екранах я розмістила кейси та відгуки клієнтів, демонструючи експертизу агенції через реальні проєкти.
+              </div>
+              <img src="../assets/screenshot-7.png" alt="Скриншот сайту 7" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
           </div>
         </section>
       </main>
-
-      <!-- Футер -->
-      <div id="footer" class="footer">
-        <p>Контакти: info@musteragency.com</p>
-      </div>
+      <div id="footer"></div>
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>
