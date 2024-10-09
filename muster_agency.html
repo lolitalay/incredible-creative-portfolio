@@ -37,10 +37,25 @@
       });
     </script>
     <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.8); /* Затемнений фон */
+        color: white; /* Білий текст за замовчуванням */
+      }
+
       .outlined {
         font-weight: bold;
         -webkit-text-stroke: 1px black; /* Контур для тексту */
         color: white; /* Прозорий текст */
+      }
+
+      .text-block {
+        border: 1px solid #2c3e50; /* Темний колір контуру */
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+      .text-block p {
+        color: #34495e; /* Темний колір тексту */
       }
     </style>
   </head>
@@ -48,8 +63,12 @@
     <div class="wrapper">
       <div id="header"></div>
       <main>
-        <section class="section section__cover" style="background-image: url('./assets/muster_agency_background.jpg');">
-          <div class="container case-cover" style="z-index: 2; padding-bottom: 20px">
+        <section class="section section__cover">
+          <div class="section__cover_esupport"></div>
+          <div
+            class="container case-cover"
+            style="z-index: 2; padding-bottom: 20px"
+          >
             <p class="text_h1 _light outlined">Muster Agency</p>
             <p class="case-cover__text_small _light outlined">
               Інформаційна архітектура, UX райтинг, контент для сайту
@@ -57,14 +76,13 @@
           </div>
         </section>
 
-
         <section class="section" style="position: relative">
           <div class="container case-view">
             <div style="padding: 16px;">
-              <div class="text_subtitle1" style="padding-bottom: 10px">
+              <div class="text_subtitle1">
                 Muster Agency — американська маркетингова агенція, яка виконує роль Fractional CMO для малих і середніх бізнесів на американському ринку у форматі місячної підписки на послуги.
-                </div>       
-              <div class="text_subtitle1" style="padding-bottom: 10px">
+              </div>
+              <div class="text_subtitle1">
                 В агенції я виконувала роль UX райтерки, контент-дизайнерки та креативної копірайтерки. В команді з розробником та UX-дизайнером я з нуля створила сучасний, привабливий та інформативний сайт, який відображає цінності агенції, демонструє її експертизу та ефективно конвертує користувачів у потенційних клієнтів.
               </div>
             </div>
@@ -109,7 +127,7 @@
               <div class="text_subtitle1">
                 На другому екрані я розташувала розділ з описом послуг, який одразу демонструє, які саме больові точки бізнесу агенція допомагає вирішити.
               </div>
-              <img src="./assets/muster_agency_02.jpg" alt="Скриншот сайту 4" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
+              <img src="../assets/muster_agency_02.jpg" alt="Скриншот сайту 4" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
           </div>
         </section>
@@ -120,7 +138,7 @@
               <div class="text_subtitle1">
                 У наступних секціях я зосередилася на побудові довіри до компанії через емоційний зв’язок та реальні кейси.
               </div>
-              <img src="./assets/muster_agency_03.jpg" alt="Скриншот сайту 5" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
+              <img src="../assets/muster_agency_03.jpg" alt="Скриншот сайту 5" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
           </div>
         </section>
@@ -131,7 +149,7 @@
               <div class="text_subtitle1">
                 У розділі “Why Muster Agency?” я подала RTB (reason to believe) — ключові аргументи, які відповідають на запити потенційних клієнтів, що підсилює довіру до компанії.
               </div>
-              <img src="./assets/muster_agency_05.jpg" alt="Скриншот сайту 6" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
+              <img src="../assets/muster_agency_05.jpg" alt="Скриншот сайту 6" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
             </div>
           </div>
         </section>
@@ -140,15 +158,4 @@
           <div class="container case-view">
             <div style="padding: 16px;">
               <div class="text_subtitle1">
-                На завершальних екранах я розмістила кейси та відгуки клієнтів, демонструючи експертизу агенції через реальні проєкти.
-              </div>
-              <img src="./assets/muster_agency_06.jpg" alt="Скриншот сайту 7" style="width: 100%; border-radius: 15px; margin-top: 10px;"/>
-            </div>
-          </div>
-        </section>
-      </main>
-      <div id="footer"></div>
-    </div>
-    <script src="/script.js"></script>
-  </body>
-</html>
+                На завершальних екранах я розмістила кейси та
