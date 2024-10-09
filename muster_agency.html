@@ -1,133 +1,211 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Креативне портфоліо креативної копірайтерки та контент-дизайнерки: кейси, контакти, резюме." />
+    <meta
+      name="description"
+      content="Креативне портфоліо креативної копірайтерки та контент-дизайнерки: кейси, контакти, резюме."
+    />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Лоліта: єПідтримка</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>Лоліта: Muster Agency</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
     <script>
-        $(function () {
-            $("#header").load("header-dark.html", function () {
-                let burg = document.querySelectorAll(".header__burger, .nav");
-                for (let i = 0; i < burg.length; i++) {
-                    burg[i].addEventListener("click", (event) => {
-                        let nav = document.querySelectorAll(".header__burger,.nav");
-                        for (let j = 0; j < nav.length; j++) {
-                            nav[j].classList.toggle("active");
-                        }
-                    });
-                }
-            });
-            $("#footer").load("footer.html");
-        });
+      $(function () {
+        $("#header").load("header-dark.html");
+        $("#footer").load("footer.html");
+      });
     </script>
     <style>
-        .section__cover {
-            background-image: url('../assets/esupport-background.jpg'); /* Замініть шлях на свій */
-            background-size: cover; /* Зайняти весь простір */
-            background-position: center; /* Центрування зображення */
-            height: 400px; /* Висота секції */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      /* General styles */
+      body {
+        font-family: 'Cormorant Garamond', serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
 
-        .bullet {
-            background-color: #e0f7fa; /* Змінити на потрібний колір */
-            border-radius: 20px;
-            padding: 15px;
-            margin: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+      /* Section styles */
+      .section {
+        padding: 40px 20px;
+      }
 
-        .section {
-            margin: 20px;
-        }
+      .section__cover {
+        background-color: #f5f5f5;
+        padding: 60px 20px;
+        text-align: center;
+      }
 
-        .header {
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+      /* Container styles */
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
+      /* Case Cover Styles */
+      .case-cover {
+        z-index: 2;
+        padding-bottom: 20px;
+      }
+
+      .case-cover .text_h1 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .case-cover__text_small {
+        font-size: 18px;
+        color: #666;
+      }
+
+      /* Text Block Styles */
+      .case-view__text-block {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .grid-column_1,
+      .grid-column_2 {
+        flex: 1;
+      }
+
+      /* Dynamic Bullet Point Styles */
+      .bullet-point {
+        background: #e6f7ff;
+        border-radius: 25px;
+        padding: 10px;
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+      }
+
+      .bullet-point:hover {
+        transform: scale(1.05);
+      }
+
+      /* Image Styles */
+      .case-view__text-block_image img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      /* Footer */
+      #footer {
+        background: #272727;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div id="header"></div>
-        <main>
-            <section class="section section__cover">
-                <div class="container case-cover">
-                    <p class="text_h1 _light">єПідтримка</p>
-                    <p class="case-cover__text_small _light">Ахітектура контенту, контент для сайту, флоу застосунку</p>
-                </div>
-            </section>
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover">
+          <div class="container case-cover">
+            <p class="text_h1">Muster Agency</p>
+            <p class="case-cover__text_small">
+              Ахітектура контенту, UX райтинг, контент для сайту
+            </p>
+          </div>
+        </section>
 
-            <section class="section">
-                <div class="container">
-                    <div class="header">Короткий опис про агенцію</div>
-                    <p>
-                        Тут буде короткий опис про агенцію, її місію, цінності та особливості роботи.
-                    </p>
-                </div>
-            </section>
+        <!-- Description of the agency -->
+        <section class="section">
+          <div class="container case-view">
+            <div class="case-view__text-block">
+              <div class="bullet-point">
+                У довоєнний час, коли ще існував COVID-19, Володимир Зеленський
+                впровадив програму соціальної допомоги єПідтримка.
+              </div>
+              <img src="../assets/esupport.gif" alt="Support Image" />
+            </div>
+          </div>
+        </section>
 
-            <section class="section">
-                <div class="container">
-                    <div class="header">Опис задач</div>
-                    <p>
-                        Ось опис задач, які стояли переді мною, коли я працювала над кейсом.
-                    </p>
-                </div>
-            </section>
+        <!-- Description of tasks -->
+        <section class="section">
+          <div class="container case-view">
+            <div class="case-view__text-block">
+              <div class="bullet-point">
+                В мене було 3 дні, щоб з нуля зрозуміти суть програми й створити
+                комунікацію про неї з Україною.
+              </div>
+              <img src="../assets/esupport-card.png" alt="Support Card" />
+            </div>
+          </div>
+        </section>
 
-            <section class="section">
-                <div class="container">
-                    <div class="header">Основна частина кейсу</div>
-                    <div class="bullet">
-                        <strong>Розділ 1:</strong> Пояснення роботи з першим аспектом.
-                    </div>
-                    <div class="bullet">
-                        <strong>Розділ 2:</strong> Пояснення роботи з другим аспектом.
-                    </div>
-                    <div class="bullet">
-                        <strong>Розділ 3:</strong> Пояснення роботи з третім аспектом.
-                    </div>
-                    <div class="bullet">
-                        <strong>Розділ 4:</strong> Пояснення роботи з четвертим аспектом.
-                    </div>
-                    <div class="bullet">
-                        <strong>Розділ 5:</strong> Пояснення роботи з п’ятим аспектом.
-                    </div>
-                    <div class="bullet">
-                        <strong>Розділ 6:</strong> Пояснення роботи з шостим аспектом.
-                    </div>
-                </div>
-            </section>
+        <!-- Core of the case: 5-6 sections -->
+        <section class="section">
+          <div class="container case-view">
+            <div class="case-view__text-block">
+              <h2>[ Основна частина кейсу ]</h2>
+              <!-- Placeholder for multiple sections -->
+              <div class="bullet-point">
+                <strong>Секція 1:</strong> Опис роботи та пояснення.
+              </div>
+              <img src="../assets/example1.png" alt="Example Screenshot" />
+              
+              <div class="bullet-point">
+                <strong>Секція 2:</strong> Опис роботи та пояснення.
+              </div>
+              <img src="../assets/example2.png" alt="Example Screenshot" />
+              
+              <div class="bullet-point">
+                <strong>Секція 3:</strong> Опис роботи та пояснення.
+              </div>
+              <img src="../assets/example3.png" alt="Example Screenshot" />
+              
+              <div class="bullet-point">
+                <strong>Секція 4:</strong> Опис роботи та пояснення.
+              </div>
+              <img src="../assets/example4.png" alt="Example Screenshot" />
+              
+              <div class="bullet-point">
+                <strong>Секція 5:</strong> Опис роботи та пояснення.
+              </div>
+              <img src="../assets/example5.png" alt="Example Screenshot" />
+            </div>
+          </div>
+        </section>
 
-            <section class="section">
-                <div class="container">
-                    <div class="header">Результат</div>
-                    <p>
-                        Опис результату, досягнутого внаслідок виконаної роботи.
-                    </p>
-                </div>
-            </section>
-        </main>
-        <div id="footer"></div>
+        <!-- Result -->
+        <section class="section">
+          <div class="container case-view">
+            <div class="case-view__text-block">
+              <h2>[ Результат ]</h2>
+              <div class="bullet-point">
+                За перші 2 місяці існування програми, 8+ мільйонів українців
+                отримали виплати єПідтримки через Дію та витратили 3 мільярди
+                гривень на підтримку бізнесів.
+              </div>
+              <img src="../assets/result-image.png" alt="Result Screenshot" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="footer"></div>
     </div>
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
