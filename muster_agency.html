@@ -36,19 +36,27 @@
         $("#footer").load("footer.html");
       });
     </script>
+    <style>
+      .outlined {
+        font-weight: bold;
+        -webkit-text-stroke: 1px black; /* Контур для тексту */
+        color: transparent; /* Прозорий текст */
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <div id="header"></div>
       <main>
         <section class="section section__cover" style="background-image: url('./assets/muster_agency_background.jpg');">
-          <div class="container case-cover" style="z-index: 2; padding-bottom: 20px; border: 2px solid black; border-radius: 15px; padding: 20px;">
-            <p class="text_h1 _light" style="border: 1px solid black; padding: 10px; border-radius: 5px;">Muster Agency</p>
-            <p class="case-cover__text_small _light" style="border: 1px solid black; padding: 10px; border-radius: 5px;">
+          <div class="container case-cover" style="z-index: 2; padding-bottom: 20px">
+            <p class="text_h1 _light outlined">Muster Agency</p>
+            <p class="case-cover__text_small _light outlined">
               Інформаційна архітектура, UX райтинг, контент для сайту
             </p>
           </div>
         </section>
+
 
         <section class="section" style="position: relative">
           <div class="container case-view">
