@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Креативне портфоліо креативної копірайтерки та контент-дизайнерки: кейси, контакти, резюме."
-    />
+    <meta name="description" content="Креативне портфоліо креативної копірайтерки та контент-дизайнерки: кейси, контакти, резюме." />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -15,79 +12,162 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <title>Лоліта: Muster Agency</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
-      $(function () {
-        $("#header").load("header-dark.html", function () {
-          let burg = document.querySelectorAll(".header__burger, .nav");
-          for (let i = 0; i < burg.length; i++) {
-            burg[i].addEventListener("click", (event) => {
-              let nav = document.querySelectorAll(".header__burger,.nav");
-              for (let j = 0; j < nav.length; j++) {
-                nav[j].classList.toggle("active");
-              }
+        $(function () {
+            $("#header").load("header-dark.html", function () {
+                let burg = document.querySelectorAll(".header__burger, .nav");
+                for (let i = 0; i < burg.length; i++) {
+                    burg[i].addEventListener("click", (event) => {
+                        let nav = document.querySelectorAll(".header__burger,.nav");
+                        for (let j = 0; j < nav.length; j++) {
+                            nav[j].classList.toggle("active");
+                        }
+                    });
+                }
             });
-          }
+            $("#footer").load("footer.html");
         });
-        $("#footer").load("footer.html");
-      });
     </script>
     <style>
-      .outlined {
-        font-weight: bold;
-        -webkit-text-stroke: 1px black; /* Контур для тексту */
-        color: white; /* Прозорий текст */
-      }
+        .outlined {
+            font-weight: bold;
+            -webkit-text-stroke: 1px black; /* Контур для тексту */
+            color: white; /* Прозорий текст */
+        }
+        
+        /* Стиль для обведення зображень */
+        .img-container {
+            border: 2px solid #2c3e50; /* Темний контур */
+            border-radius: 15px; /* Закруглені краї */
+            margin-top: 10px; /* Відступ зверху */
+            overflow: hidden; /* Сховати частини зображення, що виходять за межі */
+        }
 
-      /* Стиль для обведення зображень */
-      .img-container {
-        border: 2px solid #2c3e50; /* Темний контур */
-        border-radius: 15px; /* Закруглені краї */
-        margin-top: 10px; /* Відступ зверху */
-        overflow: hidden; /* Сховати частини зображення, що виходять за межі */
-      }
-
-      img {
-        width: 100%;
-        border-radius: 15px; /* Закруглені краї зображення */
-      }
+        img {
+            width: 100%;
+            border-radius: 15px; /* Закруглені краї зображення */
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="wrapper">
-      <div id="header"></div>
-      <main>
-        <section class="section section__cover" style="background-image: url('./assets/muster_agency_background.jpg');">
-          <div class="container case-cover" style="z-index: 2; padding-bottom: 20px">
-            <p class="text_h1 _light outlined">Muster Agency</p>
-            <p class="case-cover__text_small _light outlined">
-              Інформаційна архітектура, UX райтинг, контент для сайту
-            </p>
-          </div>
-        </section>
+        <div id="header"></div>
+        <main>
+            <section class="section section__cover" style="background-image: url('./assets/muster_agency_background.jpg');">
+                <div class="container case-cover" style="z-index: 2; padding-bottom: 20px">
+                    <p class="text_h1 _light outlined">Muster Agency</p>
+                    <p class="case-cover__text_small _light outlined">
+                        Інформаційна архітектура, UX райтинг, контент для сайту
+                    </p>
+                </div>
+            </section>
 
-        <section class="section" style="position: relative">
-          <div class="container case-view">
-            <div style="padding: 16px;">
-              <div class="text_subtitle1" style="padding-bottom: 10px">
-                Muster Agency — американська маркетингова агенція, яка виконує роль Fractional CMO для малих і середніх бізнесів на американському ринку у форматі місячної підписки на послуги.
-              </div>
-              <div class="text_subtitle1" style="padding-bottom: 10px">
-                В агенції я виконувала роль UX райтерки, контент-дизайнерки та креативної копірайтерки. В команді з розробником та UX-дизайнером я з нуля створила сучасний, привабливий та інформативний сайт, який відображає цінності агенції, демонструє її експертизу та ефективно конвертує користувачів у потенційних клієнтів.
-              </div>
-            </div>
-          </div>
-        </section>
+            <section class="section" style="position: relative">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1" style="padding-bottom: 10px">
+                            Muster Agency — американська маркетингова агенція, яка виконує роль Fractional CMO для малих і середніх бізнесів на американському ринку у форматі місячної підписки на послуги.
+                        </div>
+                        <div class="text_subtitle1" style="padding-bottom: 10px">
+                            В агенції я виконувала роль UX райтерки, контент-дизайнерки та креативної копірайтерки. В команді з розробником та UX-дизайнером я з нуля створила сучасний, привабливий та інформативний сайт, який відображає цінності агенції, демонструє її експертизу та ефективно конвертує користувачів у потенційних клієнтів.
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="section">
-          <div class="container case-view">
-            <div style="padding: 16px;">
-              <div class="text_subtitle1">
-                У процесі роботи я реалізувала повний цикл UX-копірайтингу, включаючи розробку інформаційної архітектури, написання текстів для всіх сторінок та створення ефективних CTA (Call-to-Action), орієнтованих на бізнес-цілі.
-              </div>
-              <div class="img-container">
-                <img src="./assets/muster_agen
+            <section class="section">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1">
+                            У процесі роботи я реалізувала повний цикл UX-копірайтингу, включаючи розробку інформаційної архітектури, написання текстів для всіх сторінок та створення ефективних CTA (Call-to-Action), орієнтованих на бізнес-цілі.
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/muster_agency_01.jpg" alt="Main page" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1">
+                            На головній сторінці я подала прямий та зрозумілий меседж у заголовку, який чітко пояснює УТП (унікальну торгову пропозицію) послуг, а у підзаголовку коротко розкрила формат співпраці. Щоб одразу залучити користувача, додала клікабельну галерею з прев’ю кейсів та кнопку з CTA для стимулювання подальшої взаємодії та підписки на послуги.
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/muster_agency_01.jpg" alt="Main page" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1">
+                            В хедері я розмістила навігаційні елементи з основними розділами сайту в хронологічній послідовності, щоб користувачі могли легко знайти потрібну інформацію.
+                        </div>
+                        <div class="img-container">
+                            <img src="../assets/muster_agency_02.jpg" alt="Скриншот сайту 3" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1">
+                            На другому екрані я розташувала розділ з описом послуг, який одразу демонструє, які саме больові точки бізнесу агенція допомагає вирішити.
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/muster_agency_02.jpg" alt="Скриншот сайту 4" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1">
+                            У наступних секціях я зосередилася на побудові довіри до компанії через емоційний зв’язок та реальні кейси.
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/muster_agency_03.jpg" alt="Скриншот сайту 5" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1">
+                            У розділі “Why Muster Agency?” я подала RTB (reason to believe) — ключові аргументи, які відповідають на запити потенційних клієнтів, що підсилює довіру до компанії.
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/muster_agency_05.jpg" alt="Скриншот сайту 6" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container case-view">
+                    <div style="padding: 16px;">
+                        <div class="text_subtitle1">
+                            На завершальних екранах я розмістила кейси та відгуки клієнтів, демонструючи експертизу агенції через реальні проєкти.
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/muster_agency_06.jpg" alt="Скриншот сайту 7" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
