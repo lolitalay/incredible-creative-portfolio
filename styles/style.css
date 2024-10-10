@@ -1271,12 +1271,6 @@ main {
   .margin-top-desktop {
     margin-top: 20px;
   }
-  
-  .text-subtitle-small {
-    font-family: 'Cormorant Garamond', serif; /* або ваш шрифт */
-    font-size: 0.85em; /* Зменшуємо розмір шрифта на 15% */
-    line-height: 1.5; /* Висота рядка для комфортного читання */
-    color: #2c3e50; /* Тонкий темний колір */
-}
+
   
 }/*# sourceMappingURL=style.css.map */
