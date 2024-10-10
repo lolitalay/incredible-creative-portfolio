@@ -95,4 +95,12 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+
+  .text-subtitle-small {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 0.85em;
+    line-height: 1.5; 
+    color: #2c3e50;
+}
+
 }/*# sourceMappingURL=null.css.map */
