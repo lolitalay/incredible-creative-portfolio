@@ -1,81 +1,122 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Лоліта, відео</title>
-  <meta name="description" content="Портфоліо копірайтерки та UX-райтерки: кейси, контакти, резюме." />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      $("#header").load("header-dark.html");
-      $("#footer").load("footer.html");
-    });
-  </script>
-</head>
-<body>
-  <div class="wrapper">
-    <div id="header"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Портфоліо копірайтерки та UX-райтерки: кейси, контакти, резюме."
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ukf5fyv.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Лоліта, відео</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header-dark.html", function () {
+          let burg = document.querySelectorAll(".header__burger, .nav");
+          for (let i = 0; i < burg.length; i++) {
+            burg[i].addEventListener("click", (event) => {
+              let nav = document.querySelectorAll(".header__burger,.nav");
+              for (let j = 0; j < nav.length; j++) {
+                nav[j].classList.toggle("active");
+              }
+            });
+          }
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="header"></div>
+      <main>
+        <section class="section section__cover section__cover_next-big-thing">
+          <div class="container case-cover">
+         <p class="text_h1">1+1 media</p>
+            <p class="case-cover__text_small">
+              Знімальний ролик: інсайт, ідея, сценарій,
+              презентація, зйомка, робота в парі з режиссером та з продакшеном
+            </p>
+          </div>
+        </section>
+            <section class="section" style="position: relative">
+                <div class="container case-view">
+                    <div style="padding: 5px;">
+                        <div class="text-block">
+                            <div class="text_subtitle1">
+                            1+1 media проводив конкурс ідей: будь-хто, навіть котик, міг надіслати ідею відеоконтенту, а журі обирало які втілити на каналах холдингу.
+                            <p>ㅤ</p>
+                            <b>Головна задача</b> — розповісти про конкурс людям і котикам й змотивувати їх надіслати ідеї.
+                            </div>
+                        </div>
+                <div class="brackets-block">
+        
+                    ца → всі <br />
+                    термін → стислий <br />
+                    бюджет → як термін
+    
+                </div>
+              </div>
+            </div>
+            <div class="case-view__text-block">
 
-    <main>
-      <section>
-        <h1 class="text_h1">1+1 media</h1>
-        <p class="case-cover__text_small">
-          Знімальний ролик: інсайт, ідея, сценарій, презентація, зйомка, робота в парі з режиссером та з продакшеном
-        </p>
-      </section>
+                <div class="brackets-block">
+                  <div class="brackets-text">інсайт</div>
+                </div>
 
-      <section>
-        <p class="text_subtitle1">
-          1+1 media проводив конкурс ідей: будь-хто, навіть котик, міг надіслати ідею відеоконтенту, а журі обирало які втілити на каналах холдингу.
-        </p>
-        <p><b>Головна задача</b> — розповісти про конкурс людям і котикам й змотивувати їх надіслати ідеї.</p>
-        <p>
-          <strong>ЦА:</strong> всі<br>
-          <strong>Термін:</strong> стислий<br>
-          <strong>Бюджет:</strong> як термін
-        </p>
-      </section>
+              <em class="text_h42">
+                “ Люди критично ставляться до своїх ідей, тому ті роками живуть
+                у столі “</em
+              >
+            </div>
+            <div class="case-view__text-block">
+     
+                <div class="brackets-block">
+                  <div class="brackets-text">слоган</div>
+                </div>
+   
+              <em class="text_h4">
+                “ Ідеї не повинні залишатися в столі “</em
+              >
+            </div>
 
-      <section>
-        <h2>Інсайт</h2>
-        <em class="text_h42">“ Люди критично ставляться до своїх ідей, тому ті роками живуть у столі “</em>
-      </section>
+  
+              <div class="text_subtitle1 padding-block_desktop">
+                У відео розповіли історію від імені того самого стола, візуально
+                розклавши її на трьох героїв для різних цільових авдиторій:
+                дівчинки-підлітка, хлопця-влогера та мами з дитиною. Кожного з
+                них зовнішні обставини відривають від процесу створення, але
+                вони доводять діло ко кінця, адже ідеї не повинні залишатися в
+                столі.
+              </div>
+  
+   
+              <iframe
+                class="video"
+                src="https://www.youtube-nocookie.com/embed/l1usIwAXjf4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
 
-      <section>
-        <h2>Слоган</h2>
-        <em class="text_h4">“ Ідеї не повинні залишатися в столі “</em>
-      </section>
+          </div>
+        </section>
 
-      <section>
-        <p class="text_subtitle1">
-          У відео розповіли історію від імені того самого стола, візуально розклавши її на трьох героїв для різних цільових авдиторій:
-          дівчинки-підлітка, хлопця-влогера та мами з дитиною. Кожного з них зовнішні обставини відривають від процесу створення, але
-          вони доводять діло до кінця, адже ідеї не повинні залишатися в столі.
-        </p>
-      </section>
-
-      <section>
-        <iframe
-          class="video"
-          src="https://www.youtube-nocookie.com/embed/l1usIwAXjf4"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
-    </main>
-
-    <div id="footer"></div>
-  </div>
-
-  <script src="/script.js"></script>
-</body>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
 </html>
